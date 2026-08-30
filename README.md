@@ -42,11 +42,6 @@ Panas RPG is a living, technical world in **Minecraft 1.20.1 + Forge 47.4.10** w
 
 Este pack incluye **Embeddium + Oculus + Canary + FerriteCore + ModernFix + Noisium + Saturn** y configs tunedas (`BadOptimizations 40/8`, `EntityCulling 96/5`). Ver wiki completa para sacar 60 FPS en 8GB.
 
-## Créditos
-
-- Inspirado en **Keo RPG Optimized** y **Keo Optimized** de [gokukeo](https://www.curseforge.com/members/gokukeo)
-- Basado en el launcher [RongonLang Launcher v2](https://github.com/rongorus1/launcher-minecraft-v2) de [GatoArtStudio](https://github.com/GatoArtStudio)
-
 ## Licencia
 
 [MIT](LICENSE)
