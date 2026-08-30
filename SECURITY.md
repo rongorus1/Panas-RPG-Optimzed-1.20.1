@@ -21,4 +21,4 @@ Panas RPG es compatible con **RongonLang Launcher v2** (nuestro launcher persona
 
 **GitHub Launcher:** https://github.com/rongorus1/launcher-minecraft-v2
 
-Descarga RongonLang.Launcher.zip + Rongoland.rar desde Releases, descomprime y dale Play. No necesitas comprar Minecraft ni usar launchers de terceros no seguros.
+Descarga RongonLang.Launcher.zip + Panas RPG modpack desde Releases, descomprime y dale Play. No necesitas comprar Minecraft ni usar launchers de terceros no seguros.
