@@ -25,7 +25,7 @@ Panas RPG is a living, technical world in **Minecraft 1.20.1 + Forge 47.4.10** w
 ## Instalación
 
 ### PrismLauncher (Recomendado)
-1. Descarga `panas-rpg-1.1.0.mrpack` desde [Modrinth](https://modrinth.com/project/panas-rpg-create-dungeons-exploration-optimized-1.20.1) o `panas V-1.1 FIXED.zip` desde [CurseForge](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1).
+1. Descarga `panas-rpg-1.1.0.mrpack` desde [Modrinth](https://modrinth.com/modpack/panas-rpg-optimized) o `panas rpg.zip` desde [CurseForge](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1).
 2. En PrismLauncher -> `Add Instance` -> `Import` -> selecciona el `.mrpack`/`.zip`.
 3. Asigna RAM en `Ajustes -> Memoria: 4096 MB (8GB PC) o 6144 MB (16GB)` y dale `Launch`.
 
