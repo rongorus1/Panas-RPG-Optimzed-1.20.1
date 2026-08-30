@@ -42,6 +42,24 @@ Panas RPG is a living, technical world in **Minecraft 1.20.1 + Forge 47.4.10** w
 
 Este pack incluye **Embeddium + Oculus + Canary + FerriteCore + ModernFix + Noisium + Saturn** y configs tunedas (`BadOptimizations 40/8`, `EntityCulling 96/5`). Ver wiki completa para sacar 60 FPS en 8GB.
 
+
+## Para jugadores sin Premium
+
+**¿No tienes Premium?** No necesitas comprarlo para jugar Panas RPG.
+
+**Opción 1 - CurseForge (Recomendada):** Solo abre la app de **CurseForge**, busca **"Panas RPG"** y dale **Install**. Funciona con cuenta Microsoft/Mojang sin Premium.
+
+**Opción 2 - Launcher personalizado:** Si prefieres no usar CurseForge, usa nuestro launcher **RongonLang Launcher v2** hecho para Panas:
+- Descarga desde: **https://github.com/rongorus1/launcher-minecraft-v2/releases**
+- Baja RongonLang.Launcher.zip (~884 MB con juego preinstalado) + Rongoland.rar
+- Descomprime y ejecuta RongonLang Launcher.exe -> Actualizar mods -> selecciona Rongoland.rar -> Play
+
+> Panas RPG es 100% compatible con ambos launchers. Elige el que prefieras.
+
+## Insights y Estadísticas
+
+En Insights -> Pulse/Contributors/Traffic puedes ver descargas, commits y contribuidores. Si quieres contribuir con optimizaciones o traducciones, abre un Pull Request.
+
 ## Licencia
 
 [MIT](LICENSE)
