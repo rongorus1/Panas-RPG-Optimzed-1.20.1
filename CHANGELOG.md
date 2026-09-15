@@ -2,6 +2,25 @@
 
 All notable changes to Panas RPG will be documented here.
 
+## [1.3.0] - 2026-08-30
+
+**Minecraft 1.20.1 | Forge 47.4.10 | 129 -> 137 mods (+8)**
+
+### Performance & Optimization
+- Balm 7.3.38 -> **7.3.42**, Chunksending 2.8 -> **3.9**, Connectivity 5.6 -> **7.6**, FastSuite 5.1.2, FastAsyncWorldSave 2.6, Structure Layout Optimizer 1.0.11, SmoothChunk 4.1, Chloride 1.8.1, Cerulean 1.0.0, GPUTape 1.0.5.1 (debug only)
+
+### QoL
+- MouseTweaks 2.25.1, Cupboard 4.1, CrashAssistant 1.11.12, Structure Essentials 5.0, Vanillin 1.1.3, Placebo 8.6.3, Redirected 1.0.0, ServerCore 1.5.2, JEI 15.32.0.173-async
+
+### Gameplay
+- Aquaculture 2.5.7, Aquaculture Delight 1.1.0, Creeper Overhaul 3.0.2, Alex's Mobs Tweaks 1.3.0
+
+### Sophisticated Suite (critical crash fix)
+- Core 1.3.84 + Backpacks 3.24.67.2109 + Storage 1.4.86.2131 + Inventory Interactions 0.1.13.210 — fixed `NoSuchMethodError` (mandatory update from 1.2.0)
+
+### Configs included
+- BadOptimizations 40/8 + EntityCulling 96/5 + whitelist 22; Embeddium Fog Occlusion ON, Block Face Culling ON, Leaves FAST; ModernFix dynamic_resources=true, deduplicate_location=true
+
 ## [1.2.0] - 2026-08-30
 
 ### Added (8) - 30/08/2026
