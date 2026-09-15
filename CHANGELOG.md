@@ -2,6 +2,14 @@
 
 All notable changes to Panas RPG will be documented here.
 
+## [1.5.2] - 2026-09-14
+
+**Full mod set restored (206 mods), zip verified 1:1 against the live instance**
+
+- All test-instance mods included: the 15 recovered (Better Combat, Eating Animation, Freecam, Chunky, CorgiLib, Punchy! 2.7e, Traveler's Titles, Oh The Biomes We've Gone, Oh The Trees You'll Grow, and more) plus the 9 test additions (Alex's Caves, Somnia Awoken, Koremods, Tidal Towns, Unnamed Desert, Dungeons and Taverns, Entity Model/Texture Features, ImmediatelyFast)
+- Verified: 199 manifest projects + 5 override jars, 605 configs, 24 FancyMenu layouts, zero differences
+- Texture packs shipped: `HIDYKs REALM EatingAnimation compat`, `LANOSTRYs JOURNEY` (fixed v2), Nautilus3D; manual set in order: `HIDYKs REALM` (base), FreshAnimations + FA+Player, HyperPunchy + Punchy refined, Enchantment Glows, compat on top
+
 ## [1.5.1] - 2026-09-13
 
 ### Restored mods (8, disabled content back for existing worlds)
