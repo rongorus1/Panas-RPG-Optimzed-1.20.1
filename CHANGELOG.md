@@ -2,6 +2,23 @@
 
 All notable changes to Panas RPG will be documented here.
 
+## [1.5.0] - 2026-09-12
+
+**Minecraft 1.20.1 | Forge 47.4.10 | 19 new mods**
+
+### New mods
+- Animation_Overhaul, bettercombat, BetterThirdPerson, better_looting, c2me, Chunky, cinematic_respawn, Corgilib, eatinganimation, freecam, gml, mc2_interactivefoliage, Oh-The-Biomes-Weve-Gone, Oh-The-Trees-Youll-Grow, player-animation-lib, punchy, StreamsReflowing, TravelersTitles (+1 unnamed)
+
+### Key changes
+- VoiceChat updated from `voicechat-forge` to `voicechat-fabric` for better compatibility
+- Biome expansion with Oh The Biomes packs (may conflict with Terralith/Cultural Delights worldgen)
+- Performance (StreamsReflowing and more) and QoL (BetterCombat, cameras, animations)
+
+### Known issues
+- New biome mods may cause unexpected worldgen with Terralith + Cultural Delights
+- VoiceChat needs config changes after the Forge to Fabric API switch
+- Lower-end systems may feel the extra 19 mods
+
 ## [1.4.0] - 2026-09-03
 
 **Minecraft 1.20.1 | Forge 47.4.10 | 179 mods**
