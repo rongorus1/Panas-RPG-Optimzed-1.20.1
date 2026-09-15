@@ -2,6 +2,24 @@
 
 All notable changes to Panas RPG will be documented here.
 
+## [1.3.1] - 2026-08-31
+
+**Minecraft 1.20.1 | Forge 47.4.10 | 137 -> 145 mods (+8)**
+
+### Mass mod updates
+- All mods updated to latest stable for 1.20.1 Forge 47.4.10 (Core/perf: Embeddium 0.3.31, Oculus 1.8.0, ModernFix 5.27.44, FerriteCore 6.0.1, BadOptimizations 2.4.1, EntityCulling 1.9.5, Clumps, AI Improvements, Smooth Boot, Noisium, Saturn, SmoothChunk, Connectivity, Chunksending, FastSuite, FastAsyncWorldSave, Radium, Structure Layout Optimizer; QoL: JEI, JourneyMap, Jade, MouseTweaks, CraftingTweaks, Cupboard, CrashAssistant, Structure Essentials, Vanillin, Cerulean, Chloride, MemGuard; Create suite; Sophisticated suite aligned)
+
+### Manually added mods (license/policy workaround)
+- Declared as external dependencies in `manifest.json` (auto-downloaded by CurseForge, not in `overrides/mods/`): EcoTask 1.4.1, Corail Tombstone 9.0.10, Voicechat 2.6.22, Simply More 1.1.4, Entity Culling 1.9.5, Balm 7.3.42, Sophisticated Storage 1.4.86.2131, Sophisticated Inventory Interactions 0.1.13.210
+
+### Critical fixes
+- `NoSuchMethodError: RunicSwordItem` — Simply More 1.1.3 incompatible with Simply Swords 1.56.0, updated to 1.1.4
+- `Registry entry not present: createaddition:cake_base` — Create Addition 1.3.3 incompatible with Create 6.0.8, updated
+- `NoSuchMethodError: SophisticatedCore.registerMessage` — Core/Backpacks/Storage/Inventory aligned
+
+### Configs included
+- BadOptimizations 40/8, EntityCulling 96/5 + whitelist 22; Embeddium Fog Occlusion ON, Block Face Culling ON, Leaves FAST; ModernFix dynamic_resources=true, deduplicate_location=true
+
 ## [1.3.0] - 2026-08-30
 
 **Minecraft 1.20.1 | Forge 47.4.10 | 129 -> 137 mods (+8)**
