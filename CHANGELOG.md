@@ -2,6 +2,25 @@
 
 All notable changes to Panas RPG will be documented here.
 
+## [1.4.0] - 2026-09-03
+
+**Minecraft 1.20.1 | Forge 47.4.10 | 179 mods**
+
+### Custom Menu Experience (FancyMenu 3.9.12)
+- Fully customized main menu with animated background, custom navigation panels (FTB Quests, JourneyMap, Create), modpack branding, animated particles and responsive layout
+
+### Stability & Compatibility Overhaul
+- Dependency alignment across Create, Simply Swords and Sophisticated ecosystems
+- Registry conflicts resolved (missing/duplicate entries eliminated)
+- Mixin compatibility fixed (Sophisticated Core, Embeddium, ModernFix)
+- Loader conflicts eliminated (Simply More now Forge-native, compatible with Simply Swords 1.70.2); Create Addition updated for Create 6.0.8
+
+### Pack overview
+- 179 mods, 597 config files; Create 6.0.8 + Additions; Terralith, YUNG's, Dungeons Arise; Ars Nouveau, Simply Swords, Simply More; Embeddium, ModernFix, Canary, FerriteCore, Saturn
+
+### Technical improvements
+- Memory: Saturn + AllTheLeaks + ModernFix leak fixes; Worldgen: Noisium + Structure Layout Optimizer + SmoothChunk; Rendering: Embeddium + Oculus + EntityCulling + FerriteCore; Network: Connectivity + ChunkSending; Loading: Smooth Boot + ModernFix parallel loading
+
 ## [1.3.1] - 2026-08-31
 
 **Minecraft 1.20.1 | Forge 47.4.10 | 137 -> 145 mods (+8)**
