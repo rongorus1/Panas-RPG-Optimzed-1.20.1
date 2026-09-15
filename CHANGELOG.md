@@ -2,6 +2,21 @@
 
 All notable changes to Panas RPG will be documented here.
 
+## [1.5.1] - 2026-09-13
+
+### Restored mods (8, disabled content back for existing worlds)
+- Alex's Caves, Dungeons and Taverns, Tidal Towns, Somnia Awoken, Advancement Plaques (+ Iceberg library), Koremods + u_desert (Unnamed Desert)
+
+### New & updated
+- Forgified Fabric API (required backend for OBE + Embeddium compatibility), AI-Improvements re-added/updated
+
+### Key changes
+- Purple/missing deepslate fixed: repaired `LANOSTRYs JOURNEY` broken `deepslate.json` (invalid syntax + vanilla-incompatible variant format)
+- Eating Animation now works with `HIDYKs REALM`: compat patch merging all 41 foods (pack visuals + eating/drinking animation, incl. potion/milk/honey)
+
+### Active resource packs
+- `HIDYKs REALM` + EatingAnimation compat (on top), `LANOSTRYs JOURNEY` (fixed v2), Nautilus3D, FreshAnimations, FA+Player, Punchy refined, HyperPunchy, Enchantment Glows
+
 ## [1.5.0] - 2026-09-12
 
 **Minecraft 1.20.1 | Forge 47.4.10 | 19 new mods**
