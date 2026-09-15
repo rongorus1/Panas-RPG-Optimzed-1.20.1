@@ -2,6 +2,15 @@
 
 All notable changes to Panas RPG will be documented here.
 
+## [1.6.0] - 2026-09-15
+
+### Full Menu Overhaul (FancyMenu, audited screen by screen)
+- Create World: animated cinematic intro (`minecraft.mp4`, 720p loop); Singleplayer/Multiplayer/Options: branded Panas RPG wallpaper; Main Menu keeps the key art with logo
+- All layouts verified: correct screen identifiers, enabled, portable `[source:local]` asset paths, vanilla tabs/buttons untouched
+
+### Crash fix
+- Fixed startup crash (`ModuleResolution`): Chloride embedded a library colliding with Watermedia's video backend — Chloride removed, game boots cleanly, no gameplay or performance impact
+
 ## [1.5.2] - 2026-09-14
 
 **Full mod set restored (206 mods), zip verified 1:1 against the live instance**
