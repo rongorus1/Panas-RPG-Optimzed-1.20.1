@@ -2,7 +2,7 @@
 
 All notable changes to Panas RPG will be documented here.
 
-## [1.7.0] - 2026-09-21
+## [1.6.1] - 2026-09-21
 
 **Minecraft 1.20.1 | Forge 47.4.10**
 
