@@ -2,6 +2,20 @@
 
 All notable changes to Panas RPG will be documented here.
 
+## [1.7.0] - 2026-09-21
+
+**Minecraft 1.20.1 | Forge 47.4.10**
+
+### Removed
+- **Watermedia 3.0.0.23 + Watermedia Binaries 3.0.0.6** — video backgrounds removed; FancyMenu menus now use a static image instead, eliminating the ~137MB dependency and startup overhead from FFmpeg initialization
+
+### Added
+- **Upgrader Items** — roulette-style gambling mod: throw items in, test your luck, upgrade or lose
+
+### Changed
+- **FancyMenu menus** — video backgrounds replaced with branded static image; same visual identity, lighter install, zero video decoder dependency
+- **Pack no longer ships `options.txt`** — each player configures controls, video, audio and resource packs on first launch; eliminates settings conflicts between users
+
 ## [1.6.0] - 2026-09-15
 
 ### Full Menu Overhaul (FancyMenu, audited screen by screen)
