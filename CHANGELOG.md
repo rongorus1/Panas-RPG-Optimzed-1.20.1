@@ -2,7 +2,7 @@
 
 All notable changes to Panas RPG will be documented here.
 
-## [1.7.0] - 2026-09-24
+## [1.8.0] - 2026-09-24
 
 **Minecraft 1.20.1 | Forge 47.4.10 | +43 quests (48 → 91 total)**
 
