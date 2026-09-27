@@ -2,7 +2,7 @@
 
 All notable changes to Panas RPG will be documented here.
 
-## [1.8.0] - 2026-09-24
+## [1.7.0] - 2026-09-24
 
 **Minecraft 1.20.1 | Forge 47.4.10 | +43 quests (48 → 91 total)**
 
@@ -89,7 +89,7 @@ All notable changes to Panas RPG will be documented here.
 - **Final load order:**
   1. `ranged_weapon_api` (BEFORE) — registers ranged weapon attributes
   2. `spell_power` (BEFORE) — registers spell power attributes
-  3. `spell_engine` (BEFORE) — registers spell engine effects
+  4. `spell_engine` (BEFORE) — registers spell engine effects
   4. `skill_tree` + `jewelry` — depend on above
   4. `puffish_skills` (AFTER) — loads datapack after attributes exist
 
@@ -169,9 +169,7 @@ All notable changes to Panas RPG will be documented here.
 
 ## 📈 Version History
 
-- **v1.8.0** (Sep 2026): +7 mods, +43 quests (FASE VII), load order fix, attribute fixes, 215 mods total
-- **v1.7.1** (Sep 2026): **Skill Tree required mods added** — Archers, Paladins & Priests, Rogues & Warriors, Wizards (RPG Series) installed to enable full Skill Tree functionality
-- **v1.7.0** (Sep 2026): Watermedia removed, Upgrader Items added, static menus, options.txt removed
+- **v1.7.0** (Sep 2026): +7 mods, +43 quests (FASE VII), load order fix, attribute fixes, 215 mods total
 - **v1.6.0** (Sep 2026): Cinematic menus + video loading screens with full audit, Chloride crash fix
 - **v1.5.2** (Sep 2026): Full mod set restored (206), texture pack lineup completed
 - **v1.5.1** (Sep 2026): 8 mods restored, Fabric API backend, deepslate + Eating Animation fixes
