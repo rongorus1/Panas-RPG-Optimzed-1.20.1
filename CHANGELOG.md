@@ -2,6 +2,26 @@
 
 All notable changes to Panas RPG will be documented here.
 
+# Changelog
+
+## [1.7.1] - 2026-09-27
+
+### Added
+- Fixed skill tree dependencies issue
+- Added Archers (RPG Series) mod
+- Added Paladins & Priests (RPG Series) mod
+- Added Rogues & Warriors (RPG Series) mod
+- Added Wizards (RPG Series) mod
+
+### Fixed
+- Fixed skill tree branch issue
+- Fixed missing dependencies for RPG classes
+- System now works correctly with all skills enabled
+
+### Changed
+- Updated RPG series mods integration
+- Improved skill tree stability
+
 ## [1.7.0] - 2026-09-24
 
 **Minecraft 1.20.1 | Forge 47.4.10 | +43 quests (48 → 91 total)**
