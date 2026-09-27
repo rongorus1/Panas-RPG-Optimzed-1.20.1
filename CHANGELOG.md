@@ -2,7 +2,6 @@
 
 All notable changes to Panas RPG will be documented here.
 
-# Changelog
 
 ## [1.7.1] - 2026-09-27
 
