@@ -40,7 +40,7 @@ Panas RPG is a living, technical world in **Minecraft 1.20.1 + Forge 47.4.10** w
 
 ## Optimización
 
-Este pack incluye **Embeddium + Oculus + Canary + FerriteCore + ModernFix + Noisium + Saturn** y configs tunedas (`BadOptimizations 40/8`, `EntityCulling 96/5`). Ver wiki completa para sacar 60 FPS en 8GB.
+Render y memoria: **Embeddium + Oculus + ModernFix + FerriteCore + EntityCulling + ImmediatelyFast + Starlight + Radium** más **BadOptimizations + AllTheLeaks + MemGuard + GPUMemLeakFix** (+ GPUTape solo debug). Worldgen y mobs: **SmoothChunk + Clumps + AI Improvements + Smooth Boot + Chunksending + Connectivity + Cerulean + Saturn**, ruido rápido (zfastnoise, flerovium, gnetum, bocchium), guardado async (FastSuite, FastAsyncWorldSave) y logs async (Ixeris, Kerria, Asynclogger). Configs tuneadas (`EntityCulling` 96/5 + whitelist 22, `BadOptimizations`). Ver wiki completa para sacar 60 FPS en 8GB.
 
 
 ## Para jugadores sin Premium
