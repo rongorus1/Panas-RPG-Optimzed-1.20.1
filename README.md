@@ -47,9 +47,7 @@ Este pack incluye **Embeddium + Oculus + Canary + FerriteCore + ModernFix + Nois
 
 **¿No tienes Premium?** No necesitas comprarlo para jugar Panas RPG.
 
-**Opción 1 - CurseForge (Recomendada):** Solo abre la app de **CurseForge**, busca **"Panas RPG"** y dale **Install**. Funciona con cuenta Microsoft/Mojang sin Premium.
-
-**Opción 2 - Launcher Panas RPG (Recomendado sin Premium):** Usa nuestro launcher **Panas RPG Launcher**, creado para jugar sin problemas: sin cuenta premium, sin configuraciones complicadas, solo descarga y juega:
+Usa nuestro launcher **Panas RPG Launcher**, creado para jugar sin problemas: sin cuenta premium, sin configuraciones complicadas, solo descarga y juega:
 - Descarga desde: **[LauncherPanasRPG Releases](https://github.com/rongorus1/LauncherPanasRPG/releases)**
 - Ejecuta el launcher, escribe tu nombre de usuario y dale Play
 
