@@ -49,12 +49,11 @@ Este pack incluye **Embeddium + Oculus + Canary + FerriteCore + ModernFix + Nois
 
 **Opción 1 - CurseForge (Recomendada):** Solo abre la app de **CurseForge**, busca **"Panas RPG"** y dale **Install**. Funciona con cuenta Microsoft/Mojang sin Premium.
 
-**Opción 2 - Launcher personalizado (Opcional):** Si prefieres, puedes usar nuestro launcher **RongonLang Launcher v2** hecho para Panas, o cualquier launcher de tu preferencia (PrismLauncher, CurseForge App, ATLauncher):
-- Descarga desde: **https://github.com/rongorus1/launcher-minecraft-v2/releases**
-- Baja RongonLang.Launcher.zip (~884 MB con juego preinstalado) + Panas RPG modpack
-- Descomprime y ejecuta RongonLang Launcher.exe -> Actualizar mods -> selecciona Panas RPG modpack -> Play
+**Opción 2 - Launcher Panas RPG (Recomendado sin Premium):** Usa nuestro launcher **Panas RPG Launcher**, creado para jugar sin problemas: sin cuenta premium, sin configuraciones complicadas, solo descarga y juega:
+- Descarga desde: **[LauncherPanasRPG Releases](https://github.com/rongorus1/LauncherPanasRPG/releases)**
+- Ejecuta el launcher, escribe tu nombre de usuario y dale Play
 
-> Panas RPG es 100% compatible con cualquier launcher. El uso de RongonLang es opcional, elige el que prefieras.
+> Panas RPG es 100% compatible con cualquier launcher (PrismLauncher, CurseForge App, ATLauncher). El uso de nuestro launcher es opcional, elige el que prefieras.
 
 ## Insights y Estadísticas
 
