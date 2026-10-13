@@ -12,7 +12,7 @@ Panas RPG is a living, technical world in **Minecraft 1.20.1 + Forge 47.4.10** w
 [![Mods](https://img.shields.io/badge/Mods-240-yellow?style=for-the-badge)](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1/relations/dependencies)
 [![RAM](https://img.shields.io/badge/RAM-6--8GB-purple?style=for-the-badge)](#requisitos)
 
-[🌐 Web del proyecto](https://rongorus1.github.io/Web-Panas-RPG/#inicio) · [Join Discord](https://discord.gg/beyMx7uuTX) · [Wiki - Guía de Rendimiento](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/wiki/Guía-de-Rendimiento) · [Changelog](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/blob/main/CHANGELOG.md) · [Releases](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases)
+[🌐 Web del proyecto](https://rongorus1.github.io/Web-Panas-RPG/#inicio) · [Join Discord](https://discord.gg/beyMx7uuTX) · [Wiki - Guía de Rendimiento](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/wiki) · [Changelog](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/blob/main/CHANGELOG.md) · [Releases](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases)
 
 ## Características
 
