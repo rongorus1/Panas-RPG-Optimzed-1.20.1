@@ -3,6 +3,16 @@
 All notable changes to Panas RPG will be documented here.
 
 
+## [1.7.3] - 2026-10-13
+
+### Added
+- Custom window icon via FancyMenu (full pack branding, no manual steps).
+- Working survival guide book: delivered automatically in new worlds, all content visible.
+- Custom No-Premium launcher: Panas RPG Launcher (https://github.com/rongorus1/LauncherPanasRPG/releases) — no premium account, no complicated setup, just download and play.
+
+### Coming soon
+- Performance update so the pack loads the CPU less (normal update, no config or world wipe needed).
+
 ## [1.7.2] - 2026-10-12
 
 Release `v-1.7.2` publicado (GitHub + CurseForge): `Panas.RPG.1.7.2.zip` (35.7 MB).
