@@ -3,6 +3,17 @@
 All notable changes to Panas RPG will be documented here.
 
 
+## [1.7.2] - 2026-10-12
+
+Release `v-1.7.2` publicado (GitHub + CurseForge): `Panas.RPG.1.7.2.zip` (35.7 MB).
+
+### Added
+- Bundle: `manifest.json` (234 archivos) + `overrides/` (`config`, `datapacks`, `fancymenu_data`, `mods` ×6, `resourcepacks`).
+- 219 → 240 mods cargados (detalle por mod pendiente).
+
+### Changed
+- Sin cambios de quests (FASE I–VII de v1.7) ni de configs documentados.
+
 ## [1.7.1] - 2026-09-27
 
 ### Added
@@ -200,3 +211,22 @@ All notable changes to Panas RPG will be documented here.
 ## 💬 Feedback
 
 Report bugs or issues on CurseForge page or join Discord: discord.gg/panas-rpg
+
+---
+
+## Era V1–V1.3.1 (Ago 2026, rescatado de CurseForge)
+
+### [V1] — Lanzamiento inicial (87 mods)
+Base técnica + exploración + cocina (Create, Dungeon Crawl, Farmer's/Alex's Delight).
+
+### [V1.1] — Living, Technical World (87 → 129 mods, +42)
+Create expandido (6.0.8, Addition, Steam Rails, Copycats, BetterFPS, Easy Structures, Enchantment Industry, Structures Arise); mazmorras (DungeonsArise, Deep Dark Regrowth, Born in Chaos, L_Ender's Cataclysm); cocina profesión (Croptopia, Bountiful, SliceAndDice); QoL (FTB Quests, Controlling, VoiceChat, Patchouli, Lightman's Currency); Simply Swords; Noisium/Saturn/Clumps/AI Improvements/Smooth Boot; configs para 130 FPS base.
+
+### [V1.2] — Optimization Patch (129 → 137, 30/08/2026)
+Ixeris/Kerria/gnetum/asynclogger + zfastnoise/flerovium/bocchium/Icterine + AppleSkin. GPUTape eliminado (100% GPU en idle).
+
+### [V1.3] — Performance & Content (30/08/2026)
+Balm/Chunksending/Connectivity/FastSuite/FastAsyncWorldSave/SLO/SmoothChunk/Chloride/Cerulean; MouseTweaks/Cupboard/CrashAssistant/Vanillin/Placebo/Redirected/ServerCore/JEI-async; Aquaculture 2 + Delight, Creeper Overhaul, Alex's Mobs Tweaks; Sophisticated Suite alineada (fix NoSuchMethodError).
+
+### [V1.3.1] — Full Update & Policy Workaround (137 → 145, 31/08/2026)
+~120 mods actualizados; 8 mods por políticas como dependencias externas en `manifest.json` (EcoTask, Corail Tombstone, Voicechat, Simply More 1.1.4, Entity Culling, Balm, Sophisticated Storage/Inventory); fixes RunicSwordItem, createaddition:cake_base, SophisticatedCore.registerMessage. (En CF el encabezado dice "V1.4" por error.)

@@ -2,17 +2,17 @@
 
 ![Panas RPG](https://raw.githubusercontent.com/rongorus1/Panas-RPG-Optimzed-1.20.1/main/assets/logo.png)
 
-Panas RPG is a living, technical world in **Minecraft 1.20.1 + Forge 47.4.10** with **mods**. Master Create factories, survive epic dungeons and cook feasts with Farmer's Delight. Optimized for lag-free co-op!
+Panas RPG is a living, technical world in **Minecraft 1.20.1 + Forge 47.4.10** with **240 mods**. Master Create factories, survive epic dungeons and cook feasts with Farmer's Delight. Optimized for lag-free co-op!
 
 [![CurseForge](https://img.shields.io/badge/CurseForge-Download-orange?style=for-the-badge&logo=curseforge)](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1)
-[![Modrinth](https://img.shields.io/badge/Modrinth-Download-1bd96a?style=for-the-badge&logo=modrinth)](https://modrinth.com/project/panas-rpg-create-dungeons-exploration-optimized-1.20.1)
-[![Version](https://img.shields.io/badge/Version-1.1.0-blue?style=for-the-badge)](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases)
+[![Version](https://img.shields.io/badge/Version-1.7.2-blue?style=for-the-badge)](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green?style=for-the-badge&logo=minecraft)](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1)
 [![Forge](https://img.shields.io/badge/Forge-47.4.10-red?style=for-the-badge)](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html)
-[![Mods](https://img.shields.io/badge/Mods-137-yellow?style=for-the-badge)](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1/relations/dependencies)
+[![Web](https://img.shields.io/badge/Web-Panas_RPG-9cf?style=for-the-badge&logo=github)](https://rongorus1.github.io/Web-Panas-RPG/#inicio)
+[![Mods](https://img.shields.io/badge/Mods-240-yellow?style=for-the-badge)](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1/relations/dependencies)
 [![RAM](https://img.shields.io/badge/RAM-6--8GB-purple?style=for-the-badge)](#requisitos)
 
-[Join Discord](https://discord.gg/beyMx7uuTX) · [Wiki - Guía de Rendimiento](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/wiki/Guía-de-Rendimiento) · [Changelog](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/blob/main/CHANGELOG.md) · [Releases](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases)
+[🌐 Web del proyecto](https://rongorus1.github.io/Web-Panas-RPG/#inicio) · [Join Discord](https://discord.gg/beyMx7uuTX) · [Wiki - Guía de Rendimiento](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/wiki/Guía-de-Rendimiento) · [Changelog](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/blob/main/CHANGELOG.md) · [Releases](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases)
 
 ## Características
 
@@ -25,7 +25,7 @@ Panas RPG is a living, technical world in **Minecraft 1.20.1 + Forge 47.4.10** w
 ## Instalación
 
 ### PrismLauncher (Recomendado)
-1. Descarga `panas-rpg-1.1.0.mrpack` desde [Modrinth](https://modrinth.com/modpack/panas-rpg-optimized) o `panas rpg.zip` desde [CurseForge](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1).
+1. Descarga `Panas.RPG.1.7.2.zip` desde [Releases](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases) o el pack completo desde [CurseForge](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1).
 2. En PrismLauncher -> `Add Instance` -> `Import` -> selecciona el `.mrpack`/`.zip`.
 3. Asigna RAM en `Ajustes -> Memoria: 4096 MB (8GB PC) o 6144 MB (16GB)` y dale `Launch`.
 
