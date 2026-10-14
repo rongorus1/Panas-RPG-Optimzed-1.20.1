@@ -3,6 +3,26 @@
 All notable changes to Panas RPG will be documented here.
 
 
+## [1.8] - 2026-10-13
+
+### Added
+- FASE VIII · Expansion: 57 new FTB Quests covering gaps I–VII, each with themed rewards plus coins (cooking, economy/storage, jewelry/runes, bosses, Create extras, Ars extras, dimensions, advancements, endgame).
+- Combat Roll 1.3.3 (dodge-roll mechanic, rebindable key).
+- AsyncParticles 20.1.4.1 (async/GPU particle tick and rendering).
+- RuOK FPS HUD on; Kerria `fastLightTextureUpload` on.
+- GeckoLib animation fixes: Born in Chaos `"-"` placeholders (babyskeleton ×2, boneimp, scarletpersecutor) + Elokesa spacing cleanup — zero animation parse failures in log.
+
+### Changed
+- AI-Improvements: `remove_look_random` on; Foliaath 70→45, Gazelle 40→28 (outliers only).
+- ModernFix: +`clear_mixin_classinfo`; EntityCulling 96/5 → 128/10.
+- Removed `.duplicate` jar + orphan configs (c2me, canary, lithium, DistantHorizons).
+
+### Fixed
+- `combat_roll:recharge` now resolves (was missing provider).
+
+### Known issues
+- `critical_strike:chance` still without provider (3 skill bonuses inactive, game unaffected).
+
 ## [1.7.3] - 2026-10-13
 
 ### Added

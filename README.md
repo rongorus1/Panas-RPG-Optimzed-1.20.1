@@ -5,7 +5,7 @@
 Panas RPG is a living, technical world in **Minecraft 1.20.1 + Forge 47.4.10** with **240 mods**. Master Create factories, survive epic dungeons and cook feasts with Farmer's Delight. Optimized for lag-free co-op!
 
 [![CurseForge](https://img.shields.io/badge/CurseForge-Download-orange?style=for-the-badge&logo=curseforge)](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1)
-[![Version](https://img.shields.io/badge/Version-1.7.2-blue?style=for-the-badge)](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases)
+[![Version](https://img.shields.io/badge/Version-1.8-blue?style=for-the-badge)](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green?style=for-the-badge&logo=minecraft)](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1)
 [![Forge](https://img.shields.io/badge/Forge-47.4.10-red?style=for-the-badge)](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html)
 [![Web](https://img.shields.io/badge/Web-Panas_RPG-9cf?style=for-the-badge&logo=github)](https://rongorus1.github.io/Web-Panas-RPG/#inicio)
