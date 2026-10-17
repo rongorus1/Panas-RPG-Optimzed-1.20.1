@@ -3,6 +3,20 @@
 All notable changes to Panas RPG will be documented here.
 
 
+## Panas RPG v1.8.2 - Libro: contenido nuevo y fix
+
+**Release Date:** October 16, 2026
+**Status:** Release • Testers needed • Feedback appreciated
+
+### Added
+- **Guia "Habilidades y Arbol de Skills"** en el libro: tecla K, las 4 pestanas (Combat, Mining, Class Skills, Weapon Skills), como se ganan puntos y XP, y clases y especializaciones de arma.
+
+### Fixed
+- **El libro "Cronicas de Panas RPG" no abria** (el item mostraba `Invalid book`): restaurado a su ruta correcta (`patchouli_books/` en la raiz del juego) y eliminada la copia inutil de `config/patchouli_books/`.
+
+### Changed
+- Texto del libro: reemplazado el amarillo por naranja (`#FF8000`) para mejor visibilidad.
+
 ## Panas RPG v1.8.1 - Guia de Jefes & Fix de Combate
 
 **Release Date:** October 16, 2026

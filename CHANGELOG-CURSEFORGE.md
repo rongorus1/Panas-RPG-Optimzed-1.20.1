@@ -5,6 +5,28 @@ No confundir con `CHANGELOG.md` (version breve para GitHub).
 
 ---
 
+Panas RPG v1.8.2 - Libro: contenido nuevo y fix
+
+Release Date: October 16, 2026
+Status: Release • Testers needed • Feedback appreciated
+
+🆕 What's New
+📖 Guia de Supervivencia — contenido nuevo
+- Nueva entrada "Habilidades y Arbol de Skills": como abrir el arbol (tecla K), las 4 pestanas (Combat, Mining, Class Skills, Weapon Skills), como se ganan puntos y experiencia, y el listado de clases y especializaciones de arma.
+
+🔧 Fixes
+- El libro "Cronicas de Panas RPG" no se abria (el item decia "Invalid book: patchouli:guia_supervivencia"): estaba en la carpeta equivocada. Restaurado a su ruta correcta (patchouli_books/ en la raiz del juego) y eliminada la copia inutil en config/patchouli_books/.
+- No hay que recrear el mundo: basta con actualizar y recargar.
+
+⚙️ Changed
+- Texto del libro: reemplazado el color amarillo por naranja (#FF8000) para mejor visibilidad.
+
+📦 Installation
+- Los cambios del libro se aplican solos, sin pasos manuales.
+- Si el libro no abre tras actualizar, recarga con F3+T o reinicia el cliente.
+
+---
+
 Panas RPG v1.8.1 - Guia de Jefes & Fix de Combate
 
 Release Date: October 16, 2026
@@ -50,6 +72,7 @@ Status: Release • Testers needed • Feedback appreciated
 - Se recomienda mundo nuevo para quien juegue por primera vez.
 
 📈 Version History
+- v1.8.2 (Oct 2026): contenido nuevo y fix del libro, color naranja
 - v1.8.1 (Oct 2026): seccion Jefes + explicacion de habilidades en el libro, fix Punchy × Better Combat, fix mision Quimica verde, ajuste de RAM
 - v1.8 (Oct 2026): FASE VIII quests, optimizacion CPU, fixes GeckoLib, Combat Roll
 - v1.7.3 (Oct 2026): icono de ventana FancyMenu, libro guia funcional, anuncio de optimizacion
