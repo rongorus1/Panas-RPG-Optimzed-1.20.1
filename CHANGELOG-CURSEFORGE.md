@@ -15,7 +15,7 @@ Status: Release • Testers needed • Feedback appreciated
 - Nueva categoria + 13 entradas que cubren TODOS los jefes del pack, agrupados por mod: Vanilla/Wither Reincarnated, Cataclysm (8), Legendary Monsters, Mowzie's Mobs, Born in Chaos, Mutant Monsters, Myths & Legends, The Graveyard, The Undergarden, Alex's Caves, Alex's Mobs, Saint's Dragons y varios (Ars Nouveau, Friends & Foes, Deep Dark Regrowth).
 - Cada jefe indica QUE HACE, COMO ENCONTRARLO/INVOCARLO y su RECOMPENSA real (extraida de los loot tables), con paginas que renderizan el modelo del mob.
 - Nueva entrada "Habilidades y Arbol de Skills": como abrir el arbol (tecla K), las 4 pestanas (Combat, Mining, Class Skills, Weapon Skills), como se ganan puntos y experiencia, y el listado de clases y especializaciones de arma.
-- Libro unificado en una sola copia (config/patchouli_books/), sin duplicados.
+- Libro en su ruta correcta (patchouli_books/ en la raiz del juego).
 
 🔧 Fixes
 - Animacion de ataque en primera persona (Punchy × Better Combat): con bettercombatCompat activado, Punchy cancelaba la animacion de Better Combat en cada golpe (el daño entraba pero no se veia el ataque). Ahora conviven: Punchy mantiene movimiento/manos y Better Combat maneja el ataque en primera persona.
