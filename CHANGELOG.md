@@ -3,62 +3,26 @@
 All notable changes to Panas RPG will be documented here.
 
 
-## Panas RPG v1.8.1 - Boss Guide & Combat Fix
+## Panas RPG v1.8.1 - Guia de Jefes & Fix de Combate
 
 **Release Date:** October 16, 2026
 **Status:** Release • Testers needed • Feedback appreciated
 
-### 🆕 What's New
-**📖 Survival Guide — New "Jefes" (Bosses) section**
-- Nueva categoría + **13 entradas** que cubren **todos los jefes del pack**, agrupados por mod: Vanilla/Wither Reincarnated, Cataclysm (8), Legendary Monsters, Mowzie's Mobs, Born in Chaos, Mutant Monsters, Myths & Legends, The Graveyard, The Undergarden, Alex's Caves, Alex's Mobs, Saint's Dragons y varios (Ars Nouveau, Friends & Foes, Deep Dark Regrowth).
-- Cada jefe indica **qué hace**, **cómo encontrarlo/invocarlo** y su **recompensa real** (extraída de los loot tables), con páginas `patchouli:entity` que renderizan el modelo del mob.
-- Espejado en ambas copias del libro (`patchouli_books/` y `config/patchouli_books/`).
+### Added
+- **Guia "Jefes"** en el libro (13 entradas): todos los jefes del pack agrupados por mod (Cataclysm, Legendary Monsters, Mowzie's, Born in Chaos, Mutant Monsters, Myths & Legends, Graveyard, Undergarden, Alex's Caves/Mobs, Saint's Dragons, vanilla y mas) con que hacen, como encontrarlos/invocarlos y sus drops reales (con el modelo del mob renderizado).
 
-### 🔧 Fixes
-- **First-person attack animation missing (Punchy × Better Combat):** with Punchy's `bettercombatCompat` enabled it cancelled Better Combat's swing the instant you attacked, so hits dealt damage but showed no animation. Both now coexist: Punchy keeps movement/hands, Better Combat drives the first-person attack.
-- **FTB Quest "Química verde" (FASE VIII):** the task pointed at a non-existent item (`mutantmonsters:chemical_x`); replaced with the correct advancement (`mutantmonsters:gunpowder_spice`).
+### Fixed
+- **Punchy × Better Combat:** restaurada la animacion de ataque en primera persona (se cancelaba en cada golpe).
+- **Mision "Quimica verde" (FASE VIII):** corregida al advancement correcto (`mutantmonsters:gunpowder_spice`).
 
-### ⚡ Performance
-- **RAM usage gap:** memory now levels out (more balanced) instead of climbing and spiking — no more multi-second GC freezes.
+### Changed
+- RAM mas nivelada (sin picos de GC de varios segundos).
+- Punchy `2.7e → 2.8f`; `bettercombatCompat → false`, `firstPersonAnimations → YES`; ajuste G1GC (`MaxMemAlloc=8064`).
 
-### ⚙️ Changed
-- Punchy `2.7e → 2.8f` (latest Forge 1.20.1).
-- `config/punchy/punchy_config.json`: `bettercombatCompat` → `false`.
-- `config/bettercombat/client.json5`: `firstPersonAnimations` → `"YES"` (arms visible in first person).
-- JVM/memory (Prism): G1GC tuning + `MaxMemAlloc=8064`, `MinMemAlloc=512`; removed leftover `watermedia.toml`.
-
-### 🖥️ Recommended setup for this update
-- RAM: 6 GB allocated (8 GB PC) or 8 GB (16 GB PC) — do not allocate it all
-- JVM flags: `-Xms8G -Xmx8G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200` (adjust size to your RAM)
-- Close background apps (browsers, Discord, launchers) — a full system RAM causes the biggest freezes
-
-### ⚠️ Known Issues
-1. **GeckoLib animations** — Saint's Dragons / Myths & Legends have broken animations (visual only, no crash)
-2. **Skill Tree:** 3 skill bonuses inactive (`critical_strike:chance` has no provider yet — game runs fine)
-3. **FancyMenu resource errors** — Cosmetic, no gameplay impact
-4. **StructureEssentials** — "Non-unique structure_set salt" (pre-existing, occasional overlapping structures)
-5. **Biome stability** — Oh The Biomes packs may conflict with Terralith generation
-6. **FPS impact** — 237 active mods — 6–8 GB RAM recommended
-
-### 📦 Installation
-- Backup `worlds/` saves before updating
-- Delete old `mods/` folder to prevent conflicts
-- Config/guide changes apply automatically, no manual steps
-- Test new world recommended for first-time users
-
-### 📈 Version History
-- **v1.8.1** (Oct 2026): Bosses section in the guide book, Punchy × Better Combat fix, Química verde quest fix, RAM tuning
-- **v1.8** (Oct 2026): FASE VIII quests, CPU optimization, GeckoLib fixes, Combat Roll
-- **v1.7.3** (Oct 2026): FancyMenu window icon, working guide book, optimization announcement
-- **v1.7.2** (Oct 2026): manifest 234 + overrides bundle, 240 loaded mods
-- **v1.7.1** (Sep 2026): +4 RPG Series mods, skill tree dependency fix, 219 total mods
-- **v1.7** (Sep 2026): +7 mods, +43 quests (FASE VII), load order fix, attribute fixes, 215 total mods
-- **v1.6.1** (Sep 2026): Static menus, Watermedia removed, Upgrader Items added
-- **v1.6.0** (Sep 2026): Cinematic menus + video loading screens, Chloride crash fix
-- **v1.5.2** (Sep 2026): Full mod set restored (206), texture pack lineup completed
-- **v1.5.1** (Sep 2026): 8 mods restored, Fabric API backend, deepslate + Eating Animation fixes
-- **v1.5.0** (Sep 2026): 19 new mods added, VoiceChat update, biome expansion
-- **v1.4.0** (Aug 2026): Initial release – 179 mods, Terralith + Cultural Delights, Create suite
+### Known issues
+- GeckoLib: animaciones de Saint's Dragons / Myths & Legends (solo visual).
+- Skill Tree: `critical_strike:chance` sin provider (el juego funciona igual).
+- 237 mods → 6–8 GB de RAM recomendados.
 
 ## [1.8] - 2026-10-13
 
