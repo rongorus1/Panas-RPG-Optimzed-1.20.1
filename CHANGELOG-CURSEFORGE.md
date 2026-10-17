@@ -11,10 +11,11 @@ Release Date: October 16, 2026
 Status: Release • Testers needed • Feedback appreciated
 
 🆕 What's New
-📖 Guia de Supervivencia — nueva seccion "Jefes"
+📖 Guia de Supervivencia — seccion "Jefes" + explicacion de "Habilidades"
 - Nueva categoria + 13 entradas que cubren TODOS los jefes del pack, agrupados por mod: Vanilla/Wither Reincarnated, Cataclysm (8), Legendary Monsters, Mowzie's Mobs, Born in Chaos, Mutant Monsters, Myths & Legends, The Graveyard, The Undergarden, Alex's Caves, Alex's Mobs, Saint's Dragons y varios (Ars Nouveau, Friends & Foes, Deep Dark Regrowth).
 - Cada jefe indica QUE HACE, COMO ENCONTRARLO/INVOCARLO y su RECOMPENSA real (extraida de los loot tables), con paginas que renderizan el modelo del mob.
-- Espejado en ambas copias del libro (patchouli_books/ y config/patchouli_books/).
+- Nueva entrada "Habilidades y Arbol de Skills": como abrir el arbol (tecla K), las 4 pestanas (Combat, Mining, Class Skills, Weapon Skills), como se ganan puntos y experiencia, y el listado de clases y especializaciones de arma.
+- Libro unificado en una sola copia (config/patchouli_books/), sin duplicados.
 
 🔧 Fixes
 - Animacion de ataque en primera persona (Punchy × Better Combat): con bettercombatCompat activado, Punchy cancelaba la animacion de Better Combat en cada golpe (el daño entraba pero no se veia el ataque). Ahora conviven: Punchy mantiene movimiento/manos y Better Combat maneja el ataque en primera persona.
@@ -49,7 +50,7 @@ Status: Release • Testers needed • Feedback appreciated
 - Se recomienda mundo nuevo para quien juegue por primera vez.
 
 📈 Version History
-- v1.8.1 (Oct 2026): seccion Jefes en el libro, fix Punchy × Better Combat, fix mision Quimica verde, ajuste de RAM
+- v1.8.1 (Oct 2026): seccion Jefes + explicacion de habilidades en el libro, fix Punchy × Better Combat, fix mision Quimica verde, ajuste de RAM
 - v1.8 (Oct 2026): FASE VIII quests, optimizacion CPU, fixes GeckoLib, Combat Roll
 - v1.7.3 (Oct 2026): icono de ventana FancyMenu, libro guia funcional, anuncio de optimizacion
 - v1.7.2 (Oct 2026): bundle manifest 234 + overrides, 240 mods cargados

@@ -10,6 +10,7 @@ All notable changes to Panas RPG will be documented here.
 
 ### Added
 - **Guia "Jefes"** en el libro (13 entradas): todos los jefes del pack agrupados por mod (Cataclysm, Legendary Monsters, Mowzie's, Born in Chaos, Mutant Monsters, Myths & Legends, Graveyard, Undergarden, Alex's Caves/Mobs, Saint's Dragons, vanilla y mas) con que hacen, como encontrarlos/invocarlos y sus drops reales (con el modelo del mob renderizado).
+- **Guia "Habilidades"** en el libro (nueva entrada): explica como funcionan las skills y el arbol — tecla K, las 4 pestanas (Combat, Mining, Class Skills, Weapon Skills), como se ganan puntos y XP, y el listado de clases y especializaciones de arma.
 
 ### Fixed
 - **Punchy × Better Combat:** restaurada la animacion de ataque en primera persona (se cancelaba en cada golpe).
