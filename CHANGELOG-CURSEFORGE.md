@@ -5,7 +5,7 @@ No confundir con `CHANGELOG.md` (version breve para GitHub).
 
 ---
 
-Panas RPG v1.8.2 - Libro: contenido nuevo y fix
+Panas RPG v1.8.2 - Libro: contenido nuevo, fix, limpieza y rebalanceo de botin
 
 Release Date: October 16, 2026
 Status: Release • Testers needed • Feedback appreciated
@@ -14,16 +14,35 @@ Status: Release • Testers needed • Feedback appreciated
 📖 Guia de Supervivencia — contenido nuevo
 - Nueva entrada "Habilidades y Arbol de Skills": como abrir el arbol (tecla K), las 4 pestanas (Combat, Mining, Class Skills, Weapon Skills), como se ganan puntos y experiencia, y el listado de clases y especializaciones de arma.
 
+⚖️ Botin de mazmorras rebalanceado (nuevo datapack global panas-loot)
+- Diamantes: peso reducido a un tercio (minimo 1) y cantidad maxima de 1 por tirada.
+- Encantamientos: nivel maximo III (antes llegaban a V+). Los rolls de mayor nivel se recortan y los aleatorios usan un cap menor.
+- Encantamientos solo en hierro: el equipo encantado de diamante/oro/netherite se convierte a su version de hierro; el de cuero/malla ya no sale encantado.
+- Manzana encantada: mucho mas rara (peso 1 y probabilidad de tirada 0.3).
+- Se sobreescriben las 131 loot tables de Dungeons Arise. Aplica a cofres nuevos o sin abrir de cualquier mundo.
+
 🔧 Fixes
+- Datapacks ahora se cargan correctamente: se agrego Paxi para cargar datapacks globales desde config/paxi/datapacks/. El datapack panas-loot estaba en una ruta invalida y no aplicaba; restaurado a su ubicacion correcta.
+- Limpieza de datapacks invalidos: eliminada la carpeta inerte datapacks/data (sin pack.mcmeta, no aplicaba).
 - El libro "Cronicas de Panas RPG" no se abria (el item decia "Invalid book: patchouli:guia_supervivencia"): estaba en la carpeta equivocada. Restaurado a su ruta correcta (patchouli_books/ en la raiz del juego) y eliminada la copia inutil en config/patchouli_books/.
 - No hay que recrear el mundo: basta con actualizar y recargar.
+
+🧹 Limpieza de UI y mensajes automaticos
+- Icono de libro (Field Guide) desactivado: ya no aparece en el menu de pausa ni en el inventario (config/fieldguide-client.json).
+- Mensajes de entrada desactivados: SecurityCraft (sayThanksMessage=false), Streams Reflowing (welcomeMessage=false) y Cataclysm (showLoginNotice=false).
+- JourneyMap: desactivado el anuncio automatico del mod en el chat (announceMod=false).
+- Terralith: desactivado el mensaje de bienvenida mediante el datapack terralith-no-toast (sin modificar el jar).
 
 ⚙️ Changed
 - Texto del libro: reemplazado el color amarillo por naranja (#FF8000) para mejor visibilidad.
 
 📦 Installation
 - Los cambios del libro se aplican solos, sin pasos manuales.
+- Paxi va incluido en el modpack (mod nuevo) y el datapack vive en config/paxi/datapacks/. No requiere pasos manuales.
 - Si el libro no abre tras actualizar, recarga con F3+T o reinicia el cliente.
+
+⚠️ Known Issues
+- El rebalanceo de botin solo afecta cofres nuevos o sin abrir. Los cofres ya abiertos conservan su contenido anterior.
 
 ---
 

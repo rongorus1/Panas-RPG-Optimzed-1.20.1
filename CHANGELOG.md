@@ -3,19 +3,29 @@
 All notable changes to Panas RPG will be documented here.
 
 
-## Panas RPG v1.8.2 - Libro: contenido nuevo y fix
+## Panas RPG v1.8.2 - Libro, limpieza y rebalanceo de botin
 
 **Release Date:** October 16, 2026
 **Status:** Release • Testers needed • Feedback appreciated
 
 ### Added
 - **Guia "Habilidades y Arbol de Skills"** en el libro: tecla K, las 4 pestanas (Combat, Mining, Class Skills, Weapon Skills), como se ganan puntos y XP, y clases y especializaciones de arma.
+- **Rebalanceo del botin de Dungeons Arise** (nuevo datapack global `panas-loot`): diamantes a 1/3 de peso y max 1; encantamientos max III; encantamientos solo en hierro; manzana encantada mucho mas rara. Sobreescribe las 131 loot tables del mod.
 
 ### Fixed
 - **El libro "Cronicas de Panas RPG" no abria** (el item mostraba `Invalid book`): restaurado a su ruta correcta (`patchouli_books/` en la raiz del juego) y eliminada la copia inutil de `config/patchouli_books/`.
+- **Datapacks ahora cargan correctamente:** se agrego **Paxi** para datapacks globales en `config/paxi/datapacks/`; el datapack de loot estaba en una ruta invalida y no aplicaba.
+- **Limpieza de datapacks invalidos:** eliminada la carpeta inerte `datapacks/data` (sin `pack.mcmeta`).
+- **Icono de libro (Field Guide) desactivado** en el menu de pausa y el inventario.
+- **Mensajes de entrada desactivados:** SecurityCraft, Streams Reflowing y Cataclysm.
 
 ### Changed
 - Texto del libro: reemplazado el amarillo por naranja (`#FF8000`) para mejor visibilidad.
+- **JourneyMap:** desactivado el anuncio automatico del mod en el chat.
+- **Terralith:** desactivado el mensaje de bienvenida mediante el datapack `terralith-no-toast`.
+
+### Known issues
+- El rebalanceo de botin solo afecta cofres nuevos o sin abrir; los ya abiertos conservan su contenido.
 
 ## Panas RPG v1.8.1 - Guia de Jefes & Fix de Combate
 
