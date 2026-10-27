@@ -2,6 +2,27 @@
 
 All notable changes to Panas RPG will be documented here.
 
+## [1.9] - Unreleased
+
+### Added
+- **FASE IX · Crónicas de los Panas:** seis misiones cooperativas de preparación, provisiones, regreso y metas de 7, 14 y 30 días de Minecraft.
+- **FASE X · Ingeniería en movimiento:** trenes, vías, estaciones, horarios y viajes largos con Create.
+- **FASE XI · La despensa de los Panas:** cultivos, pesca y cocina cooperativa con Farmer’s Delight y Aquaculture.
+- **FASE XII · Maestría de clase:** objetivos de equipo para las cuatro clases RPG y una meta del árbol de habilidades.
+- **FASE XIII · Atlas de tierras salvajes:** exploración de biomas de Regions Unexplored y Terralith, con un reto amplio opcional.
+- Calendario cooperativo del mundo mediante Paxi: anuncio de nuevos días y metas compartidas de 7, 14 y 30 días.
+- Ping Wheel para marcar temporalmente lugares y criaturas durante las expediciones.
+- Patchouli guide entry **"Expediciones y Cooperación"**, sobre el calendario, la coordinación del equipo, Ping Wheel y ajustes gráficos opcionales.
+- Mensaje personalizado de bienvenida de Panas RPG en el chat al entrar al mundo.
+
+### Changed
+- Las fases IX–XIII están organizadas en grupos desplegables, siguiendo la estructura de capítulos existente.
+- Desactivado el anuncio automático de JourneyMap en el chat al entrar al mundo; se muestra el mensaje de bienvenida personalizado de Panas RPG.
+- La Guía de Supervivencia refleja los capítulos ampliados y las expediciones cooperativas.
+
+### Notes
+- La meta del árbol de habilidades de la Fase XII se marca manualmente después de gastar un punto de clase.
+- Los objetivos de biomas de la Fase XIII pueden requerir explorar terreno nuevo; la meta final de todos los biomas es opcional.
 
 ## Panas RPG v1.8.2 - Libro, limpieza y rebalanceo de botin
 

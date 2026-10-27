@@ -5,6 +5,62 @@ No confundir con `CHANGELOG.md` (version breve para GitHub).
 
 ---
 
+Panas RPG v1.9 — Crónicas de los Panas y nuevas expediciones
+
+**Fecha de publicación:** Pendiente de publicación
+**Estado:** Notas preparadas para CurseForge
+
+## 🆕 Novedades
+
+### 🧭 FASE IX — Crónicas de los Panas
+- Seis misiones cooperativas: **Mapa de la expedición**, **Provisiones para los panas**, **Siete amaneceres**, **Dos semanas en equipo**, **Un mes de aventuras** y **Ruta de regreso**.
+- Hitos compartidos al alcanzar 7, 14 y 30 días de Minecraft.
+
+### 🚂 FASE X — Ingeniería en movimiento
+- Un recorrido de Create por vías, estaciones, paneles de destino, horarios y viajes largos en tren.
+- Las misiones acompañan al grupo desde la construcción de la infraestructura hasta completar un viaje ferroviario.
+
+### 🍲 FASE XI — La despensa de los Panas
+- Objetivos de agricultura, pesca y cocina con Farmer’s Delight y Aquaculture.
+- Prepara ingredientes y comidas para sostener las expediciones del equipo.
+
+### 🛡️ FASE XII — Maestría de clase
+- Metas de equipo para las cuatro clases: arquero, paladín, pícaro y mago.
+- Incluye un objetivo para invertir un punto en el árbol de habilidades. Como el mod del árbol no expone ese avance a FTB Quests, el jugador marca esa tarea manualmente después de gastar el punto.
+
+### 🗺️ FASE XIII — Atlas de tierras salvajes
+- Explora biomas de Regions Unexplored y Terralith con objetivos de viaje y descubrimiento.
+- El reto final de explorar 71 biomas es opcional; algunas ubicaciones pueden requerir recorrer terreno nuevo.
+
+### 🕰️ Calendario cooperativo del mundo
+- Paxi anuncia los nuevos días del mundo y registra hitos compartidos de 7, 14 y 30 días para las misiones de la Fase IX.
+- En mundos existentes, el calendario continúa desde el día actual del mundo.
+
+### 📍 Ping Wheel
+- Marca temporalmente lugares y criaturas para coordinar al grupo durante la exploración y el combate.
+- Tecla predeterminada: **Mouse 5**. Puedes cambiarla en **Options → Controls**.
+- Mantén **Tab** para mostrar información de los jugadores asociados a las marcas.
+
+### 📖 Guía de Supervivencia
+- Nueva entrada **“Expediciones y Cooperación”**, con consejos sobre el calendario, preparación, rutas, Ping Wheel y ajustes gráficos opcionales.
+- La guía acompaña la progresión ampliada de las misiones.
+
+## 🧹 Limpieza de mensajes al entrar
+- Se desactivó el anuncio automático de JourneyMap en el chat al entrar al mundo.
+- Se añadió un mensaje personalizado de bienvenida de Panas RPG: **“¡Bienvenido a Panas RPG! Prepárate para explorar, construir y sobrevivir en equipo. Abre FTB Quests y tu guía Patchouli para comenzar. ¡Juega con tus panas!”**
+
+## 📦 Instalación
+- Actualiza normalmente desde CurseForge o Prism Launcher; Paxi carga el calendario y el mensaje de bienvenida desde los datapacks incluidos.
+- En un servidor dedicado, instala Paxi y conserva los datapacks de Panas RPG en la configuración del servidor.
+- Ping Wheel debe estar instalado en el servidor y en cada cliente que vaya a usar las marcas.
+- Para las misiones de biomas, explora el mundo; no hace falta crear un mundo nuevo.
+
+## ℹ️ Notas
+- Los hitos cuentan días de Minecraft, no días reales.
+- La fase de árbol de habilidades se confirma manualmente en FTB Quests.
+- Las misiones de las fases nuevas están agrupadas como desplegables, siguiendo el diseño de las fases anteriores.
+
+
 Panas RPG v1.8.2 - Libro: contenido nuevo, fix, limpieza y rebalanceo de botin
 
 Release Date: October 16, 2026
