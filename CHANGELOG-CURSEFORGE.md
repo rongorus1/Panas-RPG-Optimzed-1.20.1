@@ -5,10 +5,29 @@ No confundir con `CHANGELOG.md` (version breve para GitHub).
 
 ---
 
+Panas RPG v1.9.1 — Hotfix de JourneyMap y resource packs
+
+**Fecha de publicación:** 27 de octubre de 2026
+**Estado:** Release
+
+## 🔧 Correcciones
+- **JourneyMap:** restaurado el archivo `journeymap.core.config` que desactiva el anuncio automático del mod al entrar al mundo.
+- **Punchy refined:** corregido el nombre del paquete en `options.txt` (`Punchy refined (1).zip`) para que se active correctamente en instalaciones limpias.
+- **Resource packs:** `FA+Player-v1.1.zip` y `HIDYKs REALM.zip` se incluyen en `overrides/resourcepacks/`; los packs con licencia ARR se siguen descargando desde CurseForge.
+
+## 📦 Instalación
+- Actualiza normalmente desde CurseForge o Prism Launcher.
+- Si usas Prism y los packs ARR no aparecen, instálalos manualmente en `resourcepacks/`; el resto se carga automáticamente.
+
+## ⚠️ Notas
+- Sin cambios en misiones, botín, calendario ni economías; este hotfix solo corrige la configuración visual y de mensajes.
+
+---
+
 Panas RPG v1.9 — Crónicas de los Panas y nuevas expediciones
 
-**Fecha de publicación:** Pendiente de publicación
-**Estado:** Notas preparadas para CurseForge
+**Fecha de publicación:** 27 de octubre de 2026
+**Estado:** Publicado
 
 ## 🆕 Novedades
 
@@ -49,8 +68,15 @@ Panas RPG v1.9 — Crónicas de los Panas y nuevas expediciones
 - Se desactivó el anuncio automático de JourneyMap en el chat al entrar al mundo.
 - Se añadió un mensaje personalizado de bienvenida de Panas RPG: **“¡Bienvenido a Panas RPG! Prepárate para explorar, construir y sobrevivir en equipo. Abre FTB Quests y tu guía Patchouli para comenzar. ¡Juega con tus panas!”**
 
+## 🪙 Economía cooperativa entre panas
+- Las monedas nuevas proceden de las recompensas de FTB Quests y de los contratos de caza Bountiful. Se desactivan la acuñación, los botines de criaturas y cofres, y las recompensas y sustituciones de botín de eventos estacionales.
+- Los contratos de caza entregan el objeto distintivo del jefe cazado, entre 1 y 6 diamantes y exactamente 1 manzana dorada; la paga monetaria escala con la dificultad: 4 monedas de hierro (rara), 1 de oro (épica) y 1 de esmeralda (legendaria). Los discos de Cataclysm son recuerdos coleccionables y evitan sumar equipo de alto poder a esos jefes.
+- Los jugadores pueden montar tiendas de Lightman's Currency para vender artículos y comprar lo que ofrecen los demás con las monedas obtenidas en las misiones.
+- No hace falta un servidor dedicado: el comercio funciona en el mundo compartido mientras el anfitrión lo tenga abierto.
+- Las monedas que ya existían en un mundo se conservan; el cambio limita las nuevas emisiones una vez cargada la configuración.
+
 ## 📦 Instalación
-- Actualiza normalmente desde CurseForge o Prism Launcher; Paxi carga el calendario y el mensaje de bienvenida desde los datapacks incluidos.
+- Actualiza normalmente desde CurseForge o Prism Launcher; Paxi carga el calendario, el mensaje de bienvenida y las funciones de recompensa de caza desde los datapacks incluidos.
 - En un servidor dedicado, instala Paxi y conserva los datapacks de Panas RPG en la configuración del servidor.
 - Ping Wheel debe estar instalado en el servidor y en cada cliente que vaya a usar las marcas.
 - Para las misiones de biomas, explora el mundo; no hace falta crear un mundo nuevo.

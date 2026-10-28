@@ -2,7 +2,17 @@
 
 All notable changes to Panas RPG will be documented here.
 
-## [1.9] - Unreleased
+## [1.9.1] - 2026-10-27
+
+### Fixed
+- **JourneyMap:** restaurado `journeymap/config/6.0/journeymap.core.config` con `announceMod=false`; el anuncio automático del mod vuelve a estar desactivado al entrar al mundo.
+- **Punchy refined:** corregida la referencia en `options.txt` a `Punchy refined (1).zip`, el nombre real del archivo que descarga CurseForge.
+- **Resource packs:** `FA+Player-v1.1.zip` y `HIDYKs REALM.zip` se incluyen ahora en `overrides/resourcepacks/` para que estén disponibles también en instalaciones manuales.
+
+### Notes
+- Los packs con licencia ARR (Enchantment Glows, FreshAnimations, HyperPunchy y Punchy refined) siguen descargándose desde CurseForge. Si usas Prism y no aparecen, instálalos manualmente en `resourcepacks/`.
+
+## [1.9] - 2026-10-27
 
 ### Added
 - **FASE IX · Crónicas de los Panas:** seis misiones cooperativas de preparación, provisiones, regreso y metas de 7, 14 y 30 días de Minecraft.
@@ -14,15 +24,19 @@ All notable changes to Panas RPG will be documented here.
 - Ping Wheel para marcar temporalmente lugares y criaturas durante las expediciones.
 - Patchouli guide entry **"Expediciones y Cooperación"**, sobre el calendario, la coordinación del equipo, Ping Wheel y ajustes gráficos opcionales.
 - Mensaje personalizado de bienvenida de Panas RPG en el chat al entrar al mundo.
+- Los contratos de Bountiful entregan un objeto distintivo del jefe objetivo, entre 1 y 6 diamantes y exactamente 1 manzana dorada; la moneda escala por rareza: 4 de hierro (rara), 1 de oro (épica) o 1 de esmeralda (legendaria).
+
 
 ### Changed
 - Las fases IX–XIII están organizadas en grupos desplegables, siguiendo la estructura de capítulos existente.
 - Desactivado el anuncio automático de JourneyMap en el chat al entrar al mundo; se muestra el mensaje de bienvenida personalizado de Panas RPG.
-- La Guía de Supervivencia refleja los capítulos ampliados y las expediciones cooperativas.
+- La Guía de Supervivencia refleja los capítulos ampliados, las expediciones cooperativas y la escala de recompensas de jefes.
+- **Economía cooperativa entre panas:** las monedas nuevas se obtienen como recompensas de FTB Quests y contratos de caza Bountiful; se desactivan la acuñación, los botines de criaturas/cofres y las recompensas y sustituciones de eventos. Las tiendas de Lightman's Currency siguen habilitadas para intercambiar monedas por artículos.
 
 ### Notes
 - La meta del árbol de habilidades de la Fase XII se marca manualmente después de gastar un punto de clase.
 - Los objetivos de biomas de la Fase XIII pueden requerir explorar terreno nuevo; la meta final de todos los biomas es opcional.
+- Las monedas que ya existían en un mundo no se eliminan; la restricción afecta a nuevas emisiones tras cargar la configuración.
 
 ## Panas RPG v1.8.2 - Libro, limpieza y rebalanceo de botin
 
@@ -39,6 +53,8 @@ All notable changes to Panas RPG will be documented here.
 - **Limpieza de datapacks invalidos:** eliminada la carpeta inerte `datapacks/data` (sin `pack.mcmeta`).
 - **Icono de libro (Field Guide) desactivado** en el menu de pausa y el inventario.
 - **Mensajes de entrada desactivados:** SecurityCraft, Streams Reflowing y Cataclysm.
+
+
 
 ### Changed
 - Texto del libro: reemplazado el amarillo por naranja (`#FF8000`) para mejor visibilidad.
@@ -61,6 +77,8 @@ All notable changes to Panas RPG will be documented here.
 - **Punchy × Better Combat:** restaurada la animacion de ataque en primera persona (se cancelaba en cada golpe).
 - **Mision "Quimica verde" (FASE VIII):** corregida al advancement correcto (`mutantmonsters:gunpowder_spice`).
 
+
+
 ### Changed
 - RAM mas nivelada (sin picos de GC de varios segundos).
 - Punchy `2.7e → 2.8f`; `bettercombatCompat → false`, `firstPersonAnimations → YES`; ajuste G1GC (`MaxMemAlloc=8064`).
@@ -78,6 +96,8 @@ All notable changes to Panas RPG will be documented here.
 - AsyncParticles 20.1.4.1 (async/GPU particle tick and rendering).
 - RuOK FPS HUD on; Kerria `fastLightTextureUpload` on.
 - GeckoLib animation fixes: Born in Chaos `"-"` placeholders (babyskeleton ×2, boneimp, scarletpersecutor) + Elokesa spacing cleanup — zero animation parse failures in log.
+
+
 
 ### Changed
 - AI-Improvements: `remove_look_random` on; Foliaath 70→45, Gazelle 40→28 (outliers only).
@@ -108,6 +128,8 @@ Release `v-1.7.2` publicado (GitHub + CurseForge): `Panas.RPG.1.7.2.zip` (35.7 M
 - Bundle: `manifest.json` (234 archivos) + `overrides/` (`config`, `datapacks`, `fancymenu_data`, `mods` ×6, `resourcepacks`).
 - 219 → 240 mods cargados (detalle por mod pendiente).
 
+
+
 ### Changed
 - Sin cambios de quests (FASE I–VII de v1.7) ni de configs documentados.
 
@@ -124,6 +146,8 @@ Release `v-1.7.2` publicado (GitHub + CurseForge): `Panas.RPG.1.7.2.zip` (35.7 M
 - Fixed skill tree branch issue
 - Fixed missing dependencies for RPG classes
 - System now works correctly with all skills enabled
+
+
 
 ### Changed
 - Updated RPG series mods integration
