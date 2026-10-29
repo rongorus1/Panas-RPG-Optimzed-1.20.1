@@ -2,15 +2,24 @@
 
 All notable changes to Panas RPG will be documented here.
 
-## [1.9.1] - 2026-10-27
+## [1.9.1] - 2026-10-28
+
+### Added
+- **Guía de Supervivencia ilustrada:** 49 páginas nuevas con renders nativos de Patchouli (`spotlight` de ítems y `entity` de criaturas). El libro pasa de 130 a 177 páginas y de 49 a 98 páginas con imagen.
+- **Otros jefes del pack:** la entrada pasa de 4 a 17 páginas e incluye 12 criaturas renderizadas: Wilden Chimera, Wildfire, Amethyst Crab, Kobolediator, Wadjet, Ancient Guardian, Frostbitten Golem, Lava Eater, Withered Abomination, Atroxiia, Cindervane y Stalker, con dónde aparece cada una.
+- **Controles Esenciales:** teclas reales del pack, teclas que vienen sin asignar y conflictos entre mods.
+
+### Changed
+- **11 entradas reescritas** con texto más corto y didáctico: mochilas y tuberías, Create y trenes, atlas de exploración, magia, clases y stats, jefes y tumbas, expediciones, árbol de habilidades, cocina y jefes varios.
+- Los textos explican el "cómo" en pasos cortos y dejan el detalle a las imágenes.
 
 ### Fixed
-- **JourneyMap:** restaurado `journeymap/config/6.0/journeymap.core.config` con `announceMod=false`; el anuncio automático del mod vuelve a estar desactivado al entrar al mundo.
-- **Punchy refined:** corregida la referencia en `options.txt` a `Punchy refined (1).zip`, el nombre real del archivo que descarga CurseForge.
-- **Resource packs:** `FA+Player-v1.1.zip` y `HIDYKs REALM.zip` se incluyen ahora en `overrides/resourcepacks/` para que estén disponibles también en instalaciones manuales.
+- **Teclas corregidas:** `G` es la habilidad especial de Alex's Caves, no de RPG Series; Simply Swords y Spell Engine vienen **sin asignar**; Combat Roll usa **Caps Lock**.
 
 ### Notes
-- Los packs con licencia ARR (Enchantment Glows, FreshAnimations, HyperPunchy y Punchy refined) siguen descargándose desde CurseForge. Si usas Prism y no aparecen, instálalos manualmente en `resourcepacks/`.
+- Actualización centrada en la guía: no cambia misiones, botín, calendario ni economías.
+- Si un render no carga al entrar, pulsa `F3+T` o reinicia el cliente.
+- El progreso y los marcadores del libro se conservan.
 
 ## [1.9] - 2026-10-27
 

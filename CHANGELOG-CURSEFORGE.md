@@ -5,22 +5,64 @@ No confundir con `CHANGELOG.md` (version breve para GitHub).
 
 ---
 
-Panas RPG v1.9.1 — Hotfix de JourneyMap y resource packs
+Panas RPG v1.9.1 — La Guía de Supervivencia se vuelve ilustrada
 
-**Fecha de publicación:** 27 de octubre de 2026
+**Fecha de publicación:** 28 de octubre de 2026
 **Estado:** Release
 
-## 🔧 Correcciones
-- **JourneyMap:** restaurado el archivo `journeymap.core.config` que desactiva el anuncio automático del mod al entrar al mundo.
-- **Punchy refined:** corregido el nombre del paquete en `options.txt` (`Punchy refined (1).zip`) para que se active correctamente en instalaciones limpias.
-- **Resource packs:** `FA+Player-v1.1.zip` y `HIDYKs REALM.zip` se incluyen en `overrides/resourcepacks/`; los packs con licencia ARR se siguen descargando desde CurseForge.
+## 📖 La Guía de Supervivencia, renovada
 
-## 📦 Instalación
-- Actualiza normalmente desde CurseForge o Prism Launcher.
-- Si usas Prism y los packs ARR no aparecen, instálalos manualmente en `resourcepacks/`; el resto se carga automáticamente.
+La guía deja de ser un muro de texto: cada tema importante tiene una imagen del propio mod o de vanilla, y las explicaciones se redujeron a lo esencial.
+
+- **49 páginas nuevas con render nativo** de Patchouli (de 49 a 98 en total): ítems con `spotlight` y criaturas con `entity`. Sin capturas estáticas ni texturas copiadas de otros packs.
+- **177 páginas** en total, repartidas en las mismas 25 entradas y 5 categorías.
+- Se conserva el progreso de lectura y los marcadores: no hay que empezar el libro de nuevo.
+
+### Secciones reescritas
+
+- **Mochilas, cofres y tuberías:** Sophisticated Backpacks, Sophisticated Storage y Pretty Pipes, con las mejoras que de verdad se usan.
+- **Create y trenes:** de la rueda hidráulica al horario del tren, en 4 pasos, más señales y Steam 'n' Rails.
+- **Atlas de exploración:** biomas, estructuras, Lootr y waystones.
+- **Magia:** Ars Nouveau y RPG Series por separado, con lo básico de glifos, Source y escuelas.
+- **Clases, stats y progresión:** las cuatro familias, XP compartida y atributos clave.
+- **Jefes, muerte y tumbas:** preparación, Corail Tombstone y contratos de Bountiful.
+- **Expediciones y cooperación:** calendario del mundo, equipo, Ping Wheel y ajustes de FPS.
+- **Habilidades y árbol de Skills:** pestañas, puntos, anti-farm y respec.
+- **La cocina de Panas:** Farmer's Delight, Croptopia, Cultural Delights y pesca.
+- **Controles Esenciales:** teclas reales, teclas sin asignar y conflictos.
+
+## 🐉 Más jefes, con imagen
+
+La entrada **"Otros Jefes del Pack"** pasó de 4 a 17 páginas e incluye 12 criaturas renderizadas:
+
+- **Ars Nouveau:** Wilden Chimera.
+- **Friends & Foes:** Wildfire.
+- **Cataclysm:** Amethyst Crab, Kobolediator y Wadjet, más la lista de mini-jefes.
+- **Legendary Monsters:** Ancient Guardian, Frostbitten Golem, Lava Eater y Withered Abomination.
+- **Saint's Dragons:** Atroxiia y Cindervane, con los dragones domesticables.
+- **Deep Dark Regrowth:** Stalker y su fauna.
+- **Wither Reincarnated:** nota de que no añade jefe, sino que rehace el Wither vanilla.
+
+## ⌨️ Controles: teclas verificadas
+
+Revisamos tecla por tecla contra los archivos de cada mod:
+
+- **Combat Roll = Caps Lock.** Es la esquiva: cancela caídas y saca de un golpe.
+- **Skill Tree = K**, **mochila = B**, **Ping Wheel = Mouse 5**, **Wall Jump = Shift**.
+- **G** es la habilidad especial de **Alex's Caves**, no de RPG Series.
+- **Simply Swords** (mainhand/offhand) y **Spell Engine** (hotbar 1-9) vienen **sin asignar**.
+- Conflictos documentados: **C, X, V, G, R, B y T**.
 
 ## ⚠️ Notas
-- Sin cambios en misiones, botín, calendario ni economías; este hotfix solo corrige la configuración visual y de mensajes.
+
+- Actualización centrada en la guía: no cambia misiones, botín, calendario ni economías.
+- Si un render no carga al entrar, pulsa **F3+T** o reinicia el cliente.
+- El libro se ve bien en mundos ya creados; no hace falta empezar de cero.
+
+## 📦 Instalación
+
+- Actualiza normalmente desde CurseForge o Prism Launcher.
+- Si usas Prism y los packs ARR no aparecen, instálalos manualmente en `resourcepacks/`.
 
 ---
 
