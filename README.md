@@ -5,7 +5,7 @@
 Panas RPG is a living, technical world in **Minecraft 1.20.1 + Forge 47.4.10** with **240 mods**. Master Create factories, survive epic dungeons and cook feasts with Farmer's Delight. Optimized for lag-free co-op!
 
 [![CurseForge](https://img.shields.io/badge/CurseForge-Download-orange?style=for-the-badge&logo=curseforge)](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1)
-[![Version](https://img.shields.io/badge/Version-1.8-blue?style=for-the-badge)](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases)
+[![Version](https://img.shields.io/badge/Version-1.9.2-blue?style=for-the-badge)](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green?style=for-the-badge&logo=minecraft)](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1)
 [![Forge](https://img.shields.io/badge/Forge-47.4.10-red?style=for-the-badge)](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html)
 [![Web](https://img.shields.io/badge/Web-Panas_RPG-9cf?style=for-the-badge&logo=github)](https://rongorus1.github.io/Web-Panas-RPG/#inicio)
@@ -19,13 +19,30 @@ Panas RPG is a living, technical world in **Minecraft 1.20.1 + Forge 47.4.10** w
 - **⚙️ Engineering with Create**: Create 6.0.8 + Addition, Steam Rails, Copycats. Automatiza fábricas y trenes realistas.
 - **⚔️ Exploration & Dungeons**: DungeonsArise, Deep Dark Regrowth, YUNG's x7, Terralith, Regions Unexplored. 37 bosses y loot épico.
 - **🍳 Extended Cooking**: Farmer's Delight + Alex's Delight + Croptopia + Bountiful. Cocina como profesión.
+- **🐉 Saint's Dragons**: ocho especies de dragones salvajes, domesticables y montables, con su propio crisol y equipo.
+- **🧑‍🌾 Cuatro profesiones**: Ingeniería, Cocina, Caza y Exploración suben por separado hasta nivel 30 en el árbol de Puffish Skills.
 - **🐾 Life and Realism**: Alex's Mobs, Naturalist, Critters and Companions + AmbientSounds.
 - **📍 Pro Utilities**: JourneyMap, JEI, Sophisticated Storage/Backpacks, FTB Quests.
+
+## Profesiones y progresión
+
+El pack unifica el trabajo diario en **cuatro profesiones** dentro de Puffish Skills (tecla `K`), además de las pestañas de combate, minería, clase y armas que ya existían:
+
+| Profesión | Qué la sube |
+| --- | --- |
+| **Ingeniería** | Fabricar y fundir piezas de Create; minar menas sin Toque de Seda. |
+| **Cocina** | Comer, cocinar y fundir platos de Farmer's Delight, Croptopia y guisos de dragón. |
+| **Caza** | Matar mobs; la XP escala con la vida y la XP del objetivo. Anti-farm por chunk. |
+| **Exploración** | Pescar, romper bloques naturales, minar menas y fabricar equipo de viaje. |
+
+Cada profesión llega a **nivel 30** y da **1 punto por nivel**. No hay respec para estas cuatro pestañas: los puntos se quedan donde los pones. La guía del juego explica la XP exacta de cada acción.
+
+Los dragones de **Saint's Dragons** se doman bajándoles la vida hasta su umbral y alimentándolos con *Hearty Dragon Meal*. Las escamas salen del cepillado; los huevos, solo de hembras salvajes abatidas. El **Draconic Crucible** se fabrica con 8 *Ancient Dragonite Fragments* de Ciudades Antiguas y bastiones.
 
 ## Instalación
 
 ### PrismLauncher (Recomendado)
-1. Descarga `Panas.RPG.1.7.2.zip` desde [Releases](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases) o el pack completo desde [CurseForge](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1).
+1. Descarga `Panas.RPG.1.9.2.zip` desde [Releases](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases) o el pack completo desde [CurseForge](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1).
 2. En PrismLauncher -> `Add Instance` -> `Import` -> selecciona el `.mrpack`/`.zip`.
 3. Asigna RAM en `Ajustes -> Memoria: 4096 MB (8GB PC) o 6144 MB (16GB)` y dale `Launch`.
 
@@ -42,6 +59,13 @@ Panas RPG is a living, technical world in **Minecraft 1.20.1 + Forge 47.4.10** w
 
 Render y memoria: **Embeddium + Oculus + ModernFix + FerriteCore + EntityCulling + ImmediatelyFast + Starlight + Radium** más **BadOptimizations + AllTheLeaks + MemGuard + GPUMemLeakFix** (+ GPUTape solo debug). Worldgen y mobs: **SmoothChunk + Clumps + AI Improvements + Smooth Boot + Chunksending + Connectivity + Cerulean + Saturn**, ruido rápido (zfastnoise, flerovium, gnetum, bocchium), guardado async (FastSuite, FastAsyncWorldSave) y logs async (Ixeris, Kerria, Asynclogger). Configs tuneadas (`EntityCulling` 96/5 + whitelist 22, `BadOptimizations`). Ver wiki completa para sacar 60 FPS en 8GB.
 
+## Problemas conocidos
+
+- **JEI debe quedarse en 15.74.0.227.** Con `jeasync-mixin 6.2.0` instalado, la build .232 provoca un `VerifyError` al arrancar (`StartEventObserver.register`). No actualices JEI hasta que el mixin se actualice.
+- **Resource packs ARR ausentes.** El `options.txt` del pack referencia FreshAnimations, HyperPunchy, Punchy refined, Enchantment Glows, FA+Player y HIDYKs REALM, pero no se pueden redistribuir. Si no aparecen, instálalos a mano en `resourcepacks/` o desactívalos; el juego arranca igual.
+- **Shaders no incluidos.** Oculus está instalado, pero no se distribuye ningún shaderpack. Usa el que prefieras y baja la calidad en equipos integrados.
+- **`easy_mob_farm` 11.0.0** viene en la instancia; el ZIP 1.9.1 traía 10.10.0. La versión nueva es la soportada.
+- **Fatiga de Somnia en beta.** Si te resulta incómoda, desactiva `enableFatigue` en `config/somnia-common.toml` (explicado en la guía del juego).
 
 ## Para jugadores sin Premium
 

@@ -2,6 +2,33 @@
 
 All notable changes to Panas RPG will be documented here.
 
+## [1.9.2] - 2026-10-31
+
+### Added
+- **Cuatro profesiones nuevas en Puffish Skills:** Ingeniería, Cocina, Caza y Exploración. Cada una sube hasta nivel 30, da 1 punto por nivel y tiene su propio árbol de 6 nodos. Se abren con `K`, junto a las pestañas que ya existían.
+- **FASE XIV · Jinetes de Dragón:** diez misiones cooperativas de doma, cría, equipo y vuelo con Saint's Dragons.
+- **Caza salvaje de dragones:** ocho contratos nuevos en Bountiful (uno por especie) además de las misiones de domesticación. El tablón pasa de 43 a 51 objetivos.
+- **Loot temático por jefe:** 7 tablas nuevas inyectadas en 334 loot tables de Dungeons Arise, Cataclysm, YUNG's y Repurposed Structures.
+- **Recompensas por nivel de jefe:** 4 tablas de tier y 51 funciones reescritas; cada jefe suelta botín acorde a su dificultad.
+- **Entrada "Descanso y fatiga"** en la guía, con las cifras de Somnia y cómo desactivarlo.
+
+### Changed
+- **La guía de Saint's Dragons** pasa a 13 páginas: vida, armadura, umbral de doma, comida, hábitat y botín de las 8 especies, más el crisol, los binders y el resumen de drops.
+- **"Habilidades y árbol de Skills"** explica la XP exacta de las 4 profesiones, el anti-farm y el ritmo de subida.
+- **Somnia activa la fatiga** (beta): sube unos 2,5 puntos por minuto, exige 20 para dormir y acelera el tiempo ×100 mientras duermes. Se puede desactivar.
+- **El café vuelve a funcionar:** café de Croptopia +10, granos +6, chocolate caliente +8 y caramelo de café +5.
+
+### Fixed
+- **Wither de la guía:** corregidas las cifras reales del pack (500 HP, embestida de 25 que rompe el escudo 20 s) y aclarado que no posee mobs ni usa las fases vanilla.
+- **Calendario cooperativo:** el anuncio de nuevo día muestra el día real y recuerda que el tablón de caza sigue abierto.
+- **Huérfano de recompensas:** eliminado `panas_boss_rews.json`, sustituido por `panas_boss_rews_v2.json`.
+
+### Notes
+- El libro no se entrega automáticamente: sigue saliendo de la misión de inicio.
+- Sin respec para las cuatro profesiones: los puntos invertidos se quedan.
+- Los cuatro mods de cocina nuevos (Central Kitchen, Garnished, Nether's Delight, End's Delight) se integran en la siguiente actualización, cuando llegue el export con todos los mods.
+- Actualización de contenido: no requiere mundo nuevo ni reinicia el progreso de misiones.
+
 ## [1.9.1] - 2026-10-28
 
 ### Added

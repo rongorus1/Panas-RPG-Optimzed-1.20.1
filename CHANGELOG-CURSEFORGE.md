@@ -5,6 +5,99 @@ No confundir con `CHANGELOG.md` (version breve para GitHub).
 
 ---
 
+Panas RPG v1.9.2 — Cuatro oficios, dragones y botín con criterio
+
+**Fecha de publicación:** 31 de octubre de 2026
+**Estado:** Release
+
+## 🧑‍🌾 Cuatro profesiones de verdad
+
+El pack deja de tener una sola barra de progreso y pasa a tener **cuatro oficios** dentro de Puffish Skills. Se abren con **K**, junto a las pestañas de combate, minería, clase y armas que ya existían.
+
+| Oficio | Cómo sube | Techo |
+| --- | --- | --- |
+| ⚙️ **Ingeniería** | Fabricar y fundir piezas de Create, y minar menas sin Toque de Seda | Nivel 30 |
+| 🍳 **Cocina** | Comer, cocinar y fundir platos de Farmer's Delight, Croptopia y guisos de dragón | Nivel 30 |
+| 🏹 **Caza** | Matar mobs; la XP escala con la vida y la XP del objetivo | Nivel 30 |
+| 🧭 **Exploración** | Pescar, romper bloques naturales, minar menas y fabricar equipo de viaje | Nivel 30 |
+
+- **1 punto por nivel**, 6 nodos por oficio y curvas de XP pensadas para semanas, no para una tarde.
+- **Anti-farm real:** en Caza, 12 muertes en el mismo chunk en 300 segundos dejan de dar XP. Las granjas de zombis no sustituyen a salir al mundo.
+- **Sin respec.** Los puntos se quedan donde los pones. Elige el oficio que el grupo necesite y no el que sea más cómodo hoy.
+- Las cuatro pestañas nuevas **conviven** con los árboles de otros mods: nada se sobrescribe y el progreso anterior se conserva.
+
+## 🐉 FASE XIV — Jinetes de Dragón
+
+Diez misiones cooperativas para el ciclo completo de Saint's Dragons:
+
+- **Encontrar** la especie adecuada en su bioma.
+- **Debilitarla** hasta el umbral de agotamiento sin matarla.
+- **Domarla** con *Hearty Dragon Meal* y montura.
+- **Cepillarla** para escamas y **fabricar** su equipo en el crisol.
+- **Criar** con huevos de hembras salvajes y **volar** en formación.
+
+Ninguna misión obliga a matar un dragón: la caza es una decisión, no un paso del tutorial.
+
+## 🏹 Ocho cacerías nuevas en el tablón
+
+El tablón de Bountiful pasa de 43 a **51 contratos**: uno por cada especie de Saint's Dragons, con dificultad y paga acordes a la bestia.
+
+- **Stegonaut** es la entrada: lento, duradero y perfecto para aprender.
+- **Ignivorus** es el techo: 450 de vida, aliento de 80 y una última fase que descarga 200 de daño.
+- **Nulljaw** no da escama ni huevo, pero su contrato paga bien y su montura es única.
+
+Las recompensas siguen la regla del pack: objeto distintivo del objetivo, entre 1 y 6 diamantes y exactamente 1 manzana dorada.
+
+## 💎 Botín temático en todo el mundo
+
+- **7 tablas nuevas** inyectadas en **334 loot tables** de Dungeons Arise, Cataclysm, YUNG's y Repurposed Structures.
+- **4 tablas de tier y 51 funciones de recompensa** reescritas: cada jefe suelta botín acorde a su dificultad y no un premio genérico.
+- Los jefes menores dejan de repetir el mismo cofre que un jefe final.
+- El botín de estructuras cambia según el tipo de mazmorra y el jefe que la guarda.
+
+## 📖 La guía se pone al día
+
+- **Saint's Dragons pasa de 8 a 13 páginas:** vida, armadura, umbral de doma, comida, hábitat y botín de las ocho especies, más el crisol, los binders y un resumen de qué guardar.
+- **"Habilidades y árbol de Skills"** explica la XP exacta de cada oficio, el anti-farm y el ritmo real de subida.
+- **Nueva entrada "Descanso y fatiga"** con las cifras de Somnia, los efectos por tramo y cómo desactivarlo.
+- **"Jefes Vanilla" corregido:** el Wither del pack tiene 500 de vida, embestida de 25 que rompe el escudo 20 segundos, y **no** posee mobs ni usa las fases vanilla. La entrada anterior describía el mod, no la configuración real.
+
+## ☕ Somnia entra en beta
+
+- La fatiga sube unos **2,5 puntos por minuto**; a los 40 minutos estás al máximo.
+- Necesitas **20 o más** para dormir y el tiempo corre **×100** mientras duermes.
+- Efectos a 70 (náuseas), 80 (lentitud II), 90 (veneno) y 95 (náuseas permanentes hasta dormir).
+- **El café ya funciona:** café de Croptopia +10, granos +6, chocolate caliente +8, caramelo de café +5.
+- **Es reversible:** `enableFatigue = false` en `config/somnia-common.toml` y desaparece la obligación de dormir sin tocar el resto del mod.
+
+## 🔧 Correcciones
+
+- **Calendario cooperativo:** el anuncio de nuevo día muestra el día real y recuerda que el tablón de caza sigue abierto.
+- **Recompensas de jefe:** eliminado `panas_boss_rews.json`, un archivo huérfano que ya no se cargaba, y consolidado todo en `panas_boss_rews_v2.json`.
+- **Libro:** los 32 JSON validan sin errores; los renders siguen siendo nativos de Patchouli, sin capturas.
+
+## ⚠️ Problemas conocidos
+
+- **JEI debe quedarse en 15.74.0.227.** Con `jeasync-mixin 6.2.0` instalado, la build .232 provoca un `VerifyError` al arrancar. No actualices JEI hasta que el mixin se actualice.
+- **Resource packs ARR ausentes:** el `options.txt` referencia FreshAnimations, HyperPunchy, Punchy refined, Enchantment Glows, FA+Player y HIDYKs REALM, que no se pueden redistribuir. Instálalos a mano o desactívalos; el juego arranca igual.
+- **Shaders no incluidos.** Oculus viene instalado, pero no se distribuye ningún shaderpack.
+- **`easy_mob_farm` 11.0.0** es la versión soportada; el ZIP 1.9.1 traía 10.10.0.
+
+## 📦 Instalación
+
+- Actualiza normalmente desde CurseForge o Prism Launcher.
+- No hace falta mundo nuevo: las profesiones, la Fase XIV y el botín se cargan en mundos existentes.
+- Si vienes de 1.9.1, revisa que JEI siga en .227 antes de lanzar.
+- Los cuatro mods de cocina nuevos (Central Kitchen, Garnished, Nether's Delight, End's Delight) **no entran todavía**: llegan en la próxima actualización, cuando el export con todos los mods esté cerrado.
+
+## ℹ️ Notas
+
+- El libro **no se entrega automáticamente**: sigue saliendo de la misión de inicio.
+- La XP de las profesiones es **personal**, no se comparte con el equipo.
+- Las misiones de dragones no exigen matar ninguna especie.
+
+---
+
 Panas RPG v1.9.1 — La Guía de Supervivencia se vuelve ilustrada
 
 **Fecha de publicación:** 28 de octubre de 2026
