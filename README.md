@@ -70,6 +70,7 @@ En 1.9.2 se añadió ajuste fino orientado a CPU y RAM: **JVM de referencia** co
 - **Shaders no incluidos.** Oculus está instalado, pero no se distribuye ningún shaderpack. Usa el que prefieras y baja la calidad en equipos integrados.
 - **`easy_mob_farm` 11.0.0** viene en la instancia; el ZIP 1.9.1 traía 10.10.0. La versión nueva es la soportada.
 - **Fatiga de Somnia en beta.** Si te resulta incómoda, desactiva `enableFatigue` en `config/somnia-common.toml` (explicado en la guía del juego).
+- **Mobs que desaparecen.** Let Me Despawn libera a los mobs sin nombre que recogen equipo y a los que salen de un spawner. Si quieres conservar uno, ponle una etiqueta con nombre: los mobs con nombre están protegidos. El botón **Dungeon Configs** del título (o `Ctrl + K`) abre sus ajustes.
 
 ## Para jugadores sin Premium
 
