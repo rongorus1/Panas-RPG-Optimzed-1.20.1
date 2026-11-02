@@ -98,7 +98,7 @@ Esta versión no añade mods de rendimiento nuevos: ajusta los que ya estaban y 
 - **`Embeddium`:** 3 chunks de render-ahead en vez de 4. Un frame más de latencia a cambio de menos CPU y menos stutter.
 - **`AllTheLeaks` + `structure_layout_optimizer`:** deduplicación activada en recetas, ingredientes y listas de plantillas de estructura.
 - **`servercore`:** caché de chunks ticking y lookups de bioma rápidos. Los mobs pueden aparecer unos bloques al otro lado de una frontera de bioma; no afecta a estructuras.
-- **`config/jei` limpio:** 11 archivos `.bak.1`, las carpetas `world/` y `server/` y 1,5 MB de caché de búsqueda eliminados.
+- **`config/jei` limpio:** se quitaron 11 backups, las carpetas `world/` y `server/` y 1,5 MB de caché de búsqueda. JEI puede regenerar 1–2 backups al arrancar; son inofensivos.
 
 ## 🔧 Correcciones
 
@@ -109,7 +109,7 @@ Esta versión no añade mods de rendimiento nuevos: ajusta los que ya estaban y 
 ## ⚠️ Problemas conocidos
 
 - **JEI debe quedarse en 15.74.0.227.** Con `jeasync-mixin 6.2.0` instalado, la build .232 provoca un `VerifyError` al arrancar. No actualices JEI hasta que el mixin se actualice.
-- **Resource packs ARR ausentes:** el `options.txt` referencia FreshAnimations, HyperPunchy, Punchy refined, Enchantment Glows, FA+Player y HIDYKs REALM, que no se pueden redistribuir. Instálalos a mano o desactívalos; el juego arranca igual.
+- **Resource packs ARR:** el `manifest.json` referencia FreshAnimations, HyperPunchy, Punchy refined, Enchantment Glows, FA+Player e HIDYKs REALM, y el launcher los instala en `resourcepacks/`. Si tu launcher no los descarga por permisos del autor, instálalos a mano.
 - **Shaders no incluidos.** Oculus viene instalado, pero no se distribuye ningún shaderpack.
 - **`easy_mob_farm` 11.0.0** es la versión soportada; el ZIP 1.9.1 traía 10.10.0.
 
@@ -120,6 +120,7 @@ Esta versión no añade mods de rendimiento nuevos: ajusta los que ya estaban y 
 - Si vienes de 1.9.1, revisa que JEI siga en .227 antes de lanzar.
 - Los cuatro mods de cocina (**Central Kitchen 1.5.1, Garnished 2.1.7.c, Nether's Delight 4.0, End's Delight 2.6.1**) ya vienen incluidos en `mods/`.
 - El export lleva `config/jei` limpio. Si arrastras una config vieja, borra los `.bak.1` y `search_string_cache.json.gz`.
+- **Instalación manual:** en el release de GitHub está `Panas.RPG-1.9.2-Mods.Completo.rar` con todos los mods, configs, quests y guía; descomprime su contenido en `.minecraft`.
 
 ## ℹ️ Notas
 

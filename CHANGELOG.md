@@ -20,7 +20,7 @@ All notable changes to Panas RPG will be documented here.
 - **"Habilidades y árbol de Skills"** explica la XP exacta de las 4 profesiones, el anti-farm y el ritmo de subida.
 - **Somnia activa la fatiga** (beta): sube unos 2,5 puntos por minuto, exige 20 para dormir y acelera el tiempo ×100 mientras duermes. Se puede desactivar.
 - **El café vuelve a funcionar:** café de Croptopia +10, granos +6, chocolate caliente +8 y caramelo de café +5.
-- **Ajuste de rendimiento:** JVM de referencia con G1GC, pausas de 100 ms y heap fijo 4096–8064 MB; `Ixeris` sin busy-wait, terreno de Forge fuera del hilo principal, `Smooth Boot` a 10 hilos, `Embeddium` con 3 chunks de render-ahead, deduplicación en `AllTheLeaks` y `structure_layout_optimizer`, y `servercore` con caché de chunks ticking y lookups de bioma rápidos. `config/jei` limpio: 11 backups y 1,5 MB de caché eliminados.
+- **Ajuste de rendimiento:** JVM de referencia con G1GC, pausas de 100 ms y heap fijo 4096–8064 MB; `Ixeris` sin busy-wait, terreno de Forge fuera del hilo principal, `Smooth Boot` a 10 hilos, `Embeddium` con 3 chunks de render-ahead, deduplicación en `AllTheLeaks` y `structure_layout_optimizer`, y `servercore` con caché de chunks ticking y lookups de bioma rápidos. `config/jei` limpio: se quitaron 11 backups, las carpetas `world/` y `server/` y 1,5 MB de caché; JEI puede regenerar 1–2 backups al arrancar.
 
 ### Fixed
 - **Wither de la guía:** corregidas las cifras reales del pack (500 HP, embestida de 25 que rompe el escudo 20 s) y aclarado que no posee mobs ni usa las fases vanilla.
@@ -33,6 +33,7 @@ All notable changes to Panas RPG will be documented here.
 - Los cuatro mods de cocina ya vienen incluidos; no hay que instalarlos a mano.
 - Actualización de contenido: no requiere mundo nuevo ni reinicia el progreso de misiones.
 - El re-export debe llevar los 4 jars nuevos, el tag `panas:cocina` actualizado, la guía con créditos y `config/jei` limpio.
+- 246 mods en total: 241 se descargan desde CurseForge y 5 viajan en `overrides/mods` (Clumps, Controlling, Easy Mob Farm, Fabric API, Searchables). El release de GitHub añade el paquete completo con todos los mods y configs para instalación manual.
 
 ## [1.9.1] - 2026-10-28
 

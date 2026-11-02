@@ -44,7 +44,7 @@ La cocina se amplía con cuatro mods verificados contra Create 6.0.8 y Farmer's 
 ## Instalación
 
 ### PrismLauncher (Recomendado)
-1. Descarga `Panas.RPG.1.9.2.zip` desde [Releases](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases) o el pack completo desde [CurseForge](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1).
+1. Descarga `Panas.RPG.1.9.2.zip` desde [Releases](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases) o el pack completo desde [CurseForge](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1). En el mismo release está `Panas.RPG-1.9.2-Mods.Completo.rar` con todos los mods y configs para instalación manual.
 2. En PrismLauncher -> `Add Instance` -> `Import` -> selecciona el `.mrpack`/`.zip`.
 3. Asigna RAM en `Ajustes -> Memoria: 4096 MB (8 GB de sistema) o 6144–8192 MB (16 GB o más)` y dale `Launch`.
 
@@ -66,7 +66,7 @@ En 1.9.2 se añadió ajuste fino orientado a CPU y RAM: **JVM de referencia** co
 ## Problemas conocidos
 
 - **JEI debe quedarse en 15.74.0.227.** Con `jeasync-mixin 6.2.0` instalado, la build .232 provoca un `VerifyError` al arrancar (`StartEventObserver.register`). No actualices JEI hasta que el mixin se actualice.
-- **Resource packs ARR ausentes.** El `options.txt` del pack referencia FreshAnimations, HyperPunchy, Punchy refined, Enchantment Glows, FA+Player y HIDYKs REALM, pero no se pueden redistribuir. Si no aparecen, instálalos a mano en `resourcepacks/` o desactívalos; el juego arranca igual.
+- **Resource packs ARR.** El `manifest.json` referencia FreshAnimations, HyperPunchy, Punchy refined, Enchantment Glows, FA+Player e HIDYKs REALM, y el launcher los coloca en `resourcepacks/`. Si tu launcher no los descarga por permisos del autor, instálalos a mano; el juego arranca igual.
 - **Shaders no incluidos.** Oculus está instalado, pero no se distribuye ningún shaderpack. Usa el que prefieras y baja la calidad en equipos integrados.
 - **`easy_mob_farm` 11.0.0** viene en la instancia; el ZIP 1.9.1 traía 10.10.0. La versión nueva es la soportada.
 - **Fatiga de Somnia en beta.** Si te resulta incómoda, desactiva `enableFatigue` en `config/somnia-common.toml` (explicado en la guía del juego).
