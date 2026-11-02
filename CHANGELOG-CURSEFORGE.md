@@ -7,7 +7,7 @@ No confundir con `CHANGELOG.md` (version breve para GitHub).
 
 Panas RPG v1.9.2 — Cuatro oficios, dragones, cocina y rendimiento
 
-**Fecha de publicación:** 1 de noviembre de 2026
+**Fecha de publicación:** 2 de noviembre de 2026
 **Estado:** Release
 
 ## 🧑‍🌾 Cuatro profesiones de verdad

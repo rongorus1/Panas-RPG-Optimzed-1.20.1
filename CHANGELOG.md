@@ -2,7 +2,7 @@
 
 All notable changes to Panas RPG will be documented here.
 
-## [1.9.2] - 2026-11-01
+## [1.9.2] - 2026-11-02
 
 ### Added
 - **Cuatro profesiones nuevas en Puffish Skills:** Ingeniería, Cocina, Caza y Exploración. Cada una sube hasta nivel 30, da 1 punto por nivel y tiene su propio árbol de 6 nodos. Se abren con `K`, junto a las pestañas que ya existían.
