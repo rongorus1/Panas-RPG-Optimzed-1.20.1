@@ -2,7 +2,7 @@
 
 All notable changes to Panas RPG will be documented here.
 
-## [1.9.2] - 2026-10-31
+## [1.9.2] - 2026-11-01
 
 ### Added
 - **Cuatro profesiones nuevas en Puffish Skills:** Ingeniería, Cocina, Caza y Exploración. Cada una sube hasta nivel 30, da 1 punto por nivel y tiene su propio árbol de 6 nodos. Se abren con `K`, junto a las pestañas que ya existían.
@@ -11,12 +11,16 @@ All notable changes to Panas RPG will be documented here.
 - **Loot temático por jefe:** 7 tablas nuevas inyectadas en 334 loot tables de Dungeons Arise, Cataclysm, YUNG's y Repurposed Structures.
 - **Recompensas por nivel de jefe:** 4 tablas de tier y 51 funciones reescritas; cada jefe suelta botín acorde a su dificultad.
 - **Entrada "Descanso y fatiga"** en la guía, con las cifras de Somnia y cómo desactivarlo.
+- **Cuatro mods de cocina:** Create: Central Kitchen 1.5.1, Create: Garnished 2.1.7.c, Nether's Delight 4.0 y End's Delight 2.6.1. Añaden pasteles, frutos secos, guisos del Nether y carne de dragón; verificados contra Create 6.0.8 y Farmer's Delight 1.3.4.
+- **Créditos y versión en la guía:** categoría nueva con 5 páginas. La versión se lee de un macro de `book.json`, así que se actualiza sola al cambiar el pack.
 
 ### Changed
+- **Profesión de Cocina ampliada:** el tag `panas:cocina` pasa a 565 platos y bebidas (+136) e incluye los cuatro mods nuevos.
 - **La guía de Saint's Dragons** pasa a 13 páginas: vida, armadura, umbral de doma, comida, hábitat y botín de las 8 especies, más el crisol, los binders y el resumen de drops.
 - **"Habilidades y árbol de Skills"** explica la XP exacta de las 4 profesiones, el anti-farm y el ritmo de subida.
 - **Somnia activa la fatiga** (beta): sube unos 2,5 puntos por minuto, exige 20 para dormir y acelera el tiempo ×100 mientras duermes. Se puede desactivar.
 - **El café vuelve a funcionar:** café de Croptopia +10, granos +6, chocolate caliente +8 y caramelo de café +5.
+- **Ajuste de rendimiento:** JVM de referencia con G1GC, pausas de 100 ms y heap fijo 4096–8064 MB; `Ixeris` sin busy-wait, terreno de Forge fuera del hilo principal, `Smooth Boot` a 10 hilos, `Embeddium` con 3 chunks de render-ahead, deduplicación en `AllTheLeaks` y `structure_layout_optimizer`, y `servercore` con caché de chunks ticking y lookups de bioma rápidos. `config/jei` limpio: 11 backups y 1,5 MB de caché eliminados.
 
 ### Fixed
 - **Wither de la guía:** corregidas las cifras reales del pack (500 HP, embestida de 25 que rompe el escudo 20 s) y aclarado que no posee mobs ni usa las fases vanilla.
@@ -26,8 +30,9 @@ All notable changes to Panas RPG will be documented here.
 ### Notes
 - El libro no se entrega automáticamente: sigue saliendo de la misión de inicio.
 - Sin respec para las cuatro profesiones: los puntos invertidos se quedan.
-- Los cuatro mods de cocina nuevos (Central Kitchen, Garnished, Nether's Delight, End's Delight) se integran en la siguiente actualización, cuando llegue el export con todos los mods.
+- Los cuatro mods de cocina ya vienen incluidos; no hay que instalarlos a mano.
 - Actualización de contenido: no requiere mundo nuevo ni reinicia el progreso de misiones.
+- El re-export debe llevar los 4 jars nuevos, el tag `panas:cocina` actualizado, la guía con créditos y `config/jei` limpio.
 
 ## [1.9.1] - 2026-10-28
 

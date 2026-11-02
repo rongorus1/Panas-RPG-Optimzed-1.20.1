@@ -5,9 +5,9 @@ No confundir con `CHANGELOG.md` (version breve para GitHub).
 
 ---
 
-Panas RPG v1.9.2 — Cuatro oficios, dragones y botín con criterio
+Panas RPG v1.9.2 — Cuatro oficios, dragones, cocina y rendimiento
 
-**Fecha de publicación:** 31 de octubre de 2026
+**Fecha de publicación:** 1 de noviembre de 2026
 **Estado:** Release
 
 ## 🧑‍🌾 Cuatro profesiones de verdad
@@ -17,7 +17,7 @@ El pack deja de tener una sola barra de progreso y pasa a tener **cuatro oficios
 | Oficio | Cómo sube | Techo |
 | --- | --- | --- |
 | ⚙️ **Ingeniería** | Fabricar y fundir piezas de Create, y minar menas sin Toque de Seda | Nivel 30 |
-| 🍳 **Cocina** | Comer, cocinar y fundir platos de Farmer's Delight, Croptopia y guisos de dragón | Nivel 30 |
+| 🍳 **Cocina** | Comer, cocinar y fundir platos de Farmer's Delight, Croptopia, Central Kitchen, Garnished, Nether's Delight, End's Delight y guisos de dragón | Nivel 30 |
 | 🏹 **Caza** | Matar mobs; la XP escala con la vida y la XP del objetivo | Nivel 30 |
 | 🧭 **Exploración** | Pescar, romper bloques naturales, minar menas y fabricar equipo de viaje | Nivel 30 |
 
@@ -25,6 +25,22 @@ El pack deja de tener una sola barra de progreso y pasa a tener **cuatro oficios
 - **Anti-farm real:** en Caza, 12 muertes en el mismo chunk en 300 segundos dejan de dar XP. Las granjas de zombis no sustituyen a salir al mundo.
 - **Sin respec.** Los puntos se quedan donde los pones. Elige el oficio que el grupo necesite y no el que sea más cómodo hoy.
 - Las cuatro pestañas nuevas **conviven** con los árboles de otros mods: nada se sobrescribe y el progreso anterior se conserva.
+
+## 🍲 Cuatro cocinas nuevas
+
+La profesión de Cocina ya no vive solo de Farmer's Delight. Se suman cuatro mods verificados uno a uno contra **Create 6.0.8** y **Farmer's Delight 1.3.4**:
+
+| Mod | Versión | Qué aporta |
+| --- | --- | --- |
+| 🎂 **Create: Central Kitchen** | 1.5.1 | Pasteles, tartas y platos montados con mecánicas de Create. |
+| 🥜 **Create: Garnished** | 2.1.7.c | Frutos secos, especias, salsas y comidas exóticas con cultivos propios. |
+| 🔥 **Nether's Delight** | 4.0 | Hoglin, strider, guisos y gelatinas del Nether. |
+| 🌌 **End's Delight** | 2.6.1 | Carne de dragón, shulker, coro y tés del End. |
+
+- **565 platos y bebidas** en el tag `panas:cocina` (+136 respecto a 1.9.1). Todos dan XP al comerlos, cocinarlos o fundirlos.
+- **Cero recetas pisadas:** se compararon las 3.678 rutas `data/` de los cuatro jars contra el resto del pack; ninguna receta comparte ruta.
+- **Dependencias limpias:** Forge `[47,48)`, Create 6.0.8 y Farmer's Delight 1.3.4; ningún `modId` duplicado.
+- **Hashes verificados:** los cuatro jars se descargaron de su página oficial y se comprobó el SHA1 antes de instalarlos.
 
 ## 🐉 FASE XIV — Jinetes de Dragón
 
@@ -60,6 +76,7 @@ Las recompensas siguen la regla del pack: objeto distintivo del objetivo, entre 
 - **Saint's Dragons pasa de 8 a 13 páginas:** vida, armadura, umbral de doma, comida, hábitat y botín de las ocho especies, más el crisol, los binders y un resumen de qué guardar.
 - **"Habilidades y árbol de Skills"** explica la XP exacta de cada oficio, el anti-farm y el ritmo real de subida.
 - **Nueva entrada "Descanso y fatiga"** con las cifras de Somnia, los efectos por tramo y cómo desactivarlo.
+- **Nueva categoría "Créditos y versión"** con 5 páginas: quién hizo qué, qué versión estás jugando y por qué faltan algunos resource packs. La versión sale de `book.json` y se actualiza sola.
 - **"Jefes Vanilla" corregido:** el Wither del pack tiene 500 de vida, embestida de 25 que rompe el escudo 20 segundos, y **no** posee mobs ni usa las fases vanilla. La entrada anterior describía el mod, no la configuración real.
 
 ## ☕ Somnia entra en beta
@@ -70,11 +87,24 @@ Las recompensas siguen la regla del pack: objeto distintivo del objetivo, entre 
 - **El café ya funciona:** café de Croptopia +10, granos +6, chocolate caliente +8, caramelo de café +5.
 - **Es reversible:** `enableFatigue = false` en `config/somnia-common.toml` y desaparece la obligación de dormir sin tocar el resto del mod.
 
+## ⚡ Rendimiento: CPU y RAM bajo control
+
+Esta versión no añade mods de rendimiento nuevos: ajusta los que ya estaban y limpia lo que sobraba.
+
+- **JVM de referencia:** G1GC con pausas objetivo de 100 ms, `G1NewSizePercent=20`, `G1HeapRegionSize=8M` y heap fijo de **4096–8064 MB**. Menos picos de GC y menos basura. Si tu launcher no importa el `instance.cfg`, copia estos valores a mano.
+- **`Ixeris`:** desactivado el busy-wait del limitador de FPS. El cliente deja de quemar un núcleo cuando va sobrado de frames.
+- **`forge-client`:** el terreno se prepara fuera del hilo principal; bajan los tirones al cargar chunks.
+- **`Smooth Boot`:** 10 hilos de carga principal en vez de 15. El arranque sigue rápido sin saturar el CPU.
+- **`Embeddium`:** 3 chunks de render-ahead en vez de 4. Un frame más de latencia a cambio de menos CPU y menos stutter.
+- **`AllTheLeaks` + `structure_layout_optimizer`:** deduplicación activada en recetas, ingredientes y listas de plantillas de estructura.
+- **`servercore`:** caché de chunks ticking y lookups de bioma rápidos. Los mobs pueden aparecer unos bloques al otro lado de una frontera de bioma; no afecta a estructuras.
+- **`config/jei` limpio:** 11 archivos `.bak.1`, las carpetas `world/` y `server/` y 1,5 MB de caché de búsqueda eliminados.
+
 ## 🔧 Correcciones
 
 - **Calendario cooperativo:** el anuncio de nuevo día muestra el día real y recuerda que el tablón de caza sigue abierto.
 - **Recompensas de jefe:** eliminado `panas_boss_rews.json`, un archivo huérfano que ya no se cargaba, y consolidado todo en `panas_boss_rews_v2.json`.
-- **Libro:** los 32 JSON validan sin errores; los renders siguen siendo nativos de Patchouli, sin capturas.
+- **Libro:** los 34 JSON validan sin errores; los renders siguen siendo nativos de Patchouli, sin capturas.
 
 ## ⚠️ Problemas conocidos
 
@@ -88,13 +118,15 @@ Las recompensas siguen la regla del pack: objeto distintivo del objetivo, entre 
 - Actualiza normalmente desde CurseForge o Prism Launcher.
 - No hace falta mundo nuevo: las profesiones, la Fase XIV y el botín se cargan en mundos existentes.
 - Si vienes de 1.9.1, revisa que JEI siga en .227 antes de lanzar.
-- Los cuatro mods de cocina nuevos (Central Kitchen, Garnished, Nether's Delight, End's Delight) **no entran todavía**: llegan en la próxima actualización, cuando el export con todos los mods esté cerrado.
+- Los cuatro mods de cocina (**Central Kitchen 1.5.1, Garnished 2.1.7.c, Nether's Delight 4.0, End's Delight 2.6.1**) ya vienen incluidos en `mods/`.
+- El export lleva `config/jei` limpio. Si arrastras una config vieja, borra los `.bak.1` y `search_string_cache.json.gz`.
 
 ## ℹ️ Notas
 
 - El libro **no se entrega automáticamente**: sigue saliendo de la misión de inicio.
 - La XP de las profesiones es **personal**, no se comparte con el equipo.
 - Las misiones de dragones no exigen matar ninguna especie.
+- La versión que muestra la guía sale de `macros.version` en `book.json`; si el pack sube de versión, cambia esa línea y todas las páginas se actualizan.
 
 ---
 
