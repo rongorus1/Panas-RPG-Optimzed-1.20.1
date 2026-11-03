@@ -69,7 +69,7 @@ En 1.9.2 se añadió ajuste fino orientado a CPU y RAM: **JVM de referencia** co
 - **Resource packs ARR.** El `manifest.json` referencia FreshAnimations, HyperPunchy, Punchy refined, Enchantment Glows, FA+Player e HIDYKs REALM, y el launcher los coloca en `resourcepacks/`. Si tu launcher no los descarga por permisos del autor, instálalos a mano; el juego arranca igual.
 - **Shaders no incluidos.** Oculus está instalado, pero no se distribuye ningún shaderpack. Usa el que prefieras y baja la calidad en equipos integrados.
 - **`easy_mob_farm` 11.0.0** viene en la instancia; el ZIP 1.9.1 traía 10.10.0. La versión nueva es la soportada.
-- **Fatiga de Somnia en beta.** Si te resulta incómoda, desactiva `enableFatigue` en `config/somnia-common.toml` (explicado en la guía del juego).
+- **Fatiga de Somnia en beta.** La cama ya no se bloquea por fatiga ni por llevar armadura: puedes dormir cuando quieras y el tiempo corre hasta el amanecer. La fatiga solo añade efectos si acumulas 70 o más. Si te resulta incómoda, desactiva `enableFatigue` en `config/somnia-common.toml` (explicado en la guía del juego).
 - **Mobs que desaparecen.** Let Me Despawn libera a los mobs sin nombre que recogen equipo y a los que salen de un spawner. Si quieres conservar uno, ponle una etiqueta con nombre: los mobs con nombre están protegidos. El botón **Dungeon Configs** del título (o `Ctrl + K`) abre sus ajustes.
 - **Crash al abrir "Mochilas, cofres y tuberías" en 1.9.2.** `AllTheLeaks` con `ingredientDedupe` activo choca con Sophisticated Backpacks al dibujar la mochila. En 1.9.3 viene desactivado; si juegas 1.9.2, pon `"ingredientDedupe": false` en `config/alltheleaks.json` y reinicia el juego.
 
