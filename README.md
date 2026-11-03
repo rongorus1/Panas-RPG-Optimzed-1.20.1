@@ -61,7 +61,7 @@ La cocina se amplía con cuatro mods verificados contra Create 6.0.8 y Farmer's 
 
 Render y memoria: **Embeddium + Oculus + ModernFix + FerriteCore + EntityCulling + ImmediatelyFast + Starlight + Radium** más **BadOptimizations + AllTheLeaks + MemGuard + GPUMemLeakFix** (+ GPUTape solo debug). Worldgen y mobs: **SmoothChunk + Clumps + AI Improvements + Smooth Boot + Chunksending + Connectivity + Cerulean + Saturn**, ruido rápido (zfastnoise, flerovium, gnetum, bocchium), guardado async (FastSuite, FastAsyncWorldSave) y logs async (Ixeris, Kerria, Asynclogger).
 
-En 1.9.2 se añadió ajuste fino orientado a CPU y RAM: **JVM de referencia** con G1GC, pausas de 100 ms y heap fijo de 4–8 GB, `Ixeris` sin busy-wait en el limitador de FPS, terreno de Forge preparado fuera del hilo principal, `Smooth Boot` con 10 hilos de carga, `Embeddium` con 3 chunks de render-ahead, deduplicación activada en `AllTheLeaks` y `structure_layout_optimizer`, `servercore` con caché de chunks ticking y lookups de bioma rápidos. También se limpió `config/jei` (11 backups y 1,5 MB de caché de búsqueda). Ver la wiki completa para sacar 60 FPS en 8GB.
+En 1.9.2 se añadió ajuste fino orientado a CPU y RAM: **JVM de referencia** con G1GC, pausas de 100 ms y heap fijo de 4-8 GB, `Ixeris` sin busy-wait en el limitador de FPS, terreno de Forge preparado fuera del hilo principal, `Smooth Boot` con 10 hilos de carga, `Embeddium` con 3 chunks de render-ahead, deduplicación de ResourceLocation en `AllTheLeaks` (la de ingredientes queda desactivada: es incompatible con Sophisticated Backpacks en 1.20.1) y deduplicación en `structure_layout_optimizer`, `servercore` con caché de chunks ticking y lookups de bioma rápidos. También se limpió `config/jei` (11 backups y 1,5 MB de caché de búsqueda). Ver la wiki completa para sacar 60 FPS en 8GB.
 
 ## Problemas conocidos
 
@@ -71,6 +71,7 @@ En 1.9.2 se añadió ajuste fino orientado a CPU y RAM: **JVM de referencia** co
 - **`easy_mob_farm` 11.0.0** viene en la instancia; el ZIP 1.9.1 traía 10.10.0. La versión nueva es la soportada.
 - **Fatiga de Somnia en beta.** Si te resulta incómoda, desactiva `enableFatigue` en `config/somnia-common.toml` (explicado en la guía del juego).
 - **Mobs que desaparecen.** Let Me Despawn libera a los mobs sin nombre que recogen equipo y a los que salen de un spawner. Si quieres conservar uno, ponle una etiqueta con nombre: los mobs con nombre están protegidos. El botón **Dungeon Configs** del título (o `Ctrl + K`) abre sus ajustes.
+- **Crash al abrir "Mochilas, cofres y tuberías" en 1.9.2.** `AllTheLeaks` con `ingredientDedupe` activo choca con Sophisticated Backpacks al dibujar la mochila. En 1.9.3 viene desactivado; si juegas 1.9.2, pon `"ingredientDedupe": false` en `config/alltheleaks.json` y reinicia el juego.
 
 ## Para jugadores sin Premium
 
