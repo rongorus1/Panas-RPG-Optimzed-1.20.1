@@ -5,6 +5,99 @@ No confundir con `CHANGELOG.md` (version breve para GitHub).
 
 ---
 
+Panas RPG v1.9.3 — La cama vuelve a ser la cama
+
+**Fecha de publicación:** 6 de noviembre de 2026
+**Estado:** Release
+**Mods:** sin cambios respecto a 1.9.2
+
+## 🛏️ La cama vuelve a ser la cama
+
+En 1.9.2, Somnia pedía **20 de fatiga** para dejarte dormir. Si llevabas menos de ocho minutos despierto, la cama te respondía **"You're not tired yet"** y no había forma de pasar la noche. Después, aunque ya podías dormir, Somnia retenía el contador de sueño y simulaba el mundo tick a tick: había que esperar **casi 3 minutos** hasta que amanecía. Para un jugador de Minecraft eso no es una mecánica: es un bloqueo y una pérdida de tiempo.
+
+En 1.9.3:
+
+- **Puedes dormir en cuanto anochece**, con o sin fatiga.
+- **La noche pasa como en Minecraft.** `fading = false` deja de retener el contador de sueño, así que Minecraft completa el descanso con su fundido a negro, su amanecer y su despertar de siempre, en unos **5 segundos**. La espera de ~3 minutos desaparece.
+- **Puedes dormir con la armadura puesta.** Se acabó tener que desnudarte en plena mazmorra.
+- **Dormir ya no reduce la fatiga** (`fatigueReplenishRate = 0.0`). La cama solo pasa la noche; la fatiga se cura con café.
+- El **reloj de despertar** queda desactivado (`wakeTimeSelectItem = ""`): el pack vuelve al sueño de Minecraft, sin elegir hora.
+- La **ventana de sueño vuelve a ser la de vanilla** (`12542–23460`): solo de noche.
+- **En cooperativo se duerme como en vanilla:** tienen que dormir todos, o el porcentaje que marque la gamerule.
+- Los **monstruos cerca siguen bloqueando** el descanso, como en Minecraft. Eso no se toca.
+
+### La fatiga ahora es una consecuencia, no un requisito
+
+El contador y los efectos se quedan enteros. Lo que cambia es que ya no te impiden dormir y que dormir no los cura:
+
+- Sube unos **2,5 puntos por minuto**; a los 40 minutos estás al máximo.
+- **70:** náuseas cortas.
+- **80:** lentitud II.
+- **90:** veneno.
+- **95:** náuseas permanentes hasta que bajes con café.
+- El café de Croptopia (+10), los granos (+6), el chocolate caliente (+8) y el caramelo de café (+5) siguen ayudando.
+
+Dormir está permitido en cuanto anochece, pero ya no reinicia la fatiga: si encadenas días sin café, los efectos se acumulan. Si la beta te resulta incómoda, `enableFatigue = false` en `config/somnia-common.toml` la desactiva sin romper nada más.
+
+## 🎒 Crash de mochilas resuelto
+
+Abrir la página 2 de **"Mochilas, cofres y tuberías"** (o mirar la mochila en JEI) cerraba el juego con:
+
+```
+dev.uncandango.alltheleaks.exceptions.ATLUnsupportedOperation:
+An Ingredient that contains this itemstack was cached and locked by mod AllTheLeaks,
+modifications of ItemStacks in Ingredients are not allowed!
+```
+
+No era falta de RAM ni el libro: el heap iba por 2.049 MB de 8.064 MB. Era `AllTheLeaks` con `ingredientDedupe` activo. Sophisticated Backpacks escribe NBT en la mochila para cachear sus ranuras, y esa mochila estaba dentro de un `Ingredient` bloqueado por AllTheLeaks. El propio autor del mod desaconseja esa opción en 1.20.1.
+
+En 1.9.3:
+
+- `"ingredientDedupe": false` en `config/alltheleaks.json`.
+- `"resourceLocationDedupe": true` se mantiene: esa sí es segura y sigue ahorrando memoria.
+
+## 📖 Guía actualizada
+
+- **Controles Esenciales** pasa a 10 páginas con **"Ajustes y mobs"**: el botón **Dungeon Configs** (o `Ctrl + K`), qué hace Let Me Despawn y por qué ponerle nombre a un mob lo protege.
+- **Descanso y fatiga** se reescribe: la cama funciona en cuanto anochece, la noche pasa con el fundido y el skip normales, la armadura ya no estorba y la fatiga solo se cura con café.
+- **34 archivos JSON validados**, sin BOM.
+
+## 🔧 Cambios técnicos
+
+- `config/alltheleaks.json`: `ingredientDedupe` de `true` a `false`.
+- `config/somnia-common.toml`: `minimumFatigueToSleep` de `20` a `0`; `sleepWithArmor` de `false` a `true`; `fading` de `true` a `false` (Somnia deja de retener el contador de sueño); `fatigueReplenishRate` de `0.00833` a `0.0` (dormir no cura la fatiga); `wakeTimeSelectItem` de `minecraft:clock` a `""` (reloj de despertar desactivado); `enterSleepStart`/`enterSleepEnd` de `0`/`24000` a `12542`/`23460` (solo de noche); `validSleepStart`/`validSleepEnd` a `24000`/`24000` (ventana de simulación vacía).
+- La ventana `validSleep` vacía desactiva la aceleración de Somnia (`isValidSleepTime` es lo único que la habilita): el reloj no se adelanta mientras duermes y el skip lo hace Minecraft con su transición normal.
+- No se añaden datapacks: el salto de noche vuelve a ser el de Minecraft.
+- `patchouli_books/guia_supervivencia/en_us/entries/controles_esenciales.json`: página nueva y nota de `Ctrl + K`.
+- `patchouli_books/guia_supervivencia/en_us/entries/descanso_y_fatiga.json`: 5 páginas reescritas.
+- README: problemas conocidos de AllTheLeaks, Let Me Despawn y fatiga actualizados.
+
+## 📦 Instalación
+
+- Actualiza normalmente desde CurseForge o Prism Launcher.
+- No hace falta mundo nuevo: los cambios son de configuración y del libro, así que el progreso de misiones y la lectura se conservan.
+- **Instalación manual:** en el release de GitHub está `Panas.RPG-1.9.3-Mods.Completo.rar` con todos los mods, configs, quests y guía; descomprime su contenido en `.minecraft`.
+- Si arrastras una config vieja de 1.9.2, comprueba los seis valores de `config/somnia-common.toml` y `ingredientDedupe` en `config/alltheleaks.json`; el pack nuevo ya los trae.
+
+## ⚠️ Si vienes de 1.9.2
+
+Puedes arreglar el crash sin actualizar el pack: abre `config/alltheleaks.json`, pon `"ingredientDedupe": false` y reinicia el juego. Para la cama, actualiza a 1.9.3: en `config/somnia-common.toml` pon `minimumFatigueToSleep = 0`, `sleepWithArmor = true`, `fading = false`, `fatigueReplenishRate = 0.0`, `wakeTimeSelectItem = ""`, la ventana de entrada `12542–23460` y la de simulación `validSleepStart`/`validSleepEnd = 24000`. No hace falta ningún datapack.
+
+## ⚠️ Problemas conocidos
+
+- **JEI debe quedarse en 15.74.0.227.** Con `jeasync-mixin 6.2.0` instalado, la build .232 provoca un `VerifyError` al arrancar. No actualices JEI hasta que el mixin se actualice.
+- **Resource packs ARR:** el `manifest.json` referencia FreshAnimations, HyperPunchy, Punchy refined, Enchantment Glows, FA+Player e HIDYKs REALM, y el launcher los instala en `resourcepacks/`. Si tu launcher no los descarga por permisos del autor, instálalos a mano.
+- **Shaders no incluidos.** Oculus viene instalado, pero no se distribuye ningún shaderpack.
+- **`easy_mob_farm` 11.0.0** es la versión soportada.
+
+## ℹ️ Notas
+
+- El libro **no se entrega automáticamente**: sigue saliendo de la misión de inicio.
+- Sin cambios de mods: **246 en total**, los mismos 241 de CurseForge y 5 en `overrides/mods` (Clumps, Controlling, Easy Mob Farm, Fabric API, Searchables).
+- La versión que muestra la guía sale de `macros.version` en `book.json`, que en esta release es `1.9.3`.
+
+---
+
 Panas RPG v1.9.2 — Cuatro oficios, dragones, cocina y rendimiento
 
 **Fecha de publicación:** 2 de noviembre de 2026

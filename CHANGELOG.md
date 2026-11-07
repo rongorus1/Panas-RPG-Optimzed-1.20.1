@@ -2,6 +2,23 @@
 
 All notable changes to Panas RPG will be documented here.
 
+## [1.9.3] - 2026-11-06
+
+### Fixed
+- **La cama vuelve a funcionar y la noche pasa como en Minecraft.** Somnia exigía 20 de fatiga para dormir y mostraba "You're not tired yet". Ahora `minimumFatigueToSleep = 0`: la cama funciona en cuanto anochece. Además `fading = false` deja de retener el contador de sueño, así que Minecraft completa el descanso con su fundido y su skip normales (~5 s) en vez de la simulación de ~3 minutos. También se puede dormir con la armadura puesta (`sleepWithArmor = true`).
+- **Crash al abrir "Mochilas, cofres y tuberías".** `AllTheLeaks` con `ingredientDedupe` activo bloqueaba el `ItemStack` de la mochila de Sophisticated Backpacks y lanzaba `ATLUnsupportedOperation` al renderizarla. Ahora `ingredientDedupe = false`; `resourceLocationDedupe` sigue activo.
+
+### Changed
+- **La fatiga ya no bloquea y ya no se cura durmiendo.** Se mantienen el contador, los efectos a 70/80/90/95 y el café. Dormir solo salta la noche (`fatigueReplenishRate = 0.0`); la fatiga baja únicamente con café. Si acumulas demasiadas horas despierto aparecen náuseas, lentitud y veneno, pero la cama nunca se niega.
+- **Guía: nueva página "Ajustes y mobs"** en Controles Esenciales (10 páginas). Explica `Ctrl + K` / Dungeon Configs y que los mobs con nombre no desaparecen con Let Me Despawn.
+- **Guía: "Descanso y fatiga" reescrita** para reflejar que la cama funciona en cuanto anochece, la noche pasa con el fundido y el skip normales, la armadura ya no estorba y la fatiga solo se cura con café.
+
+### Notes
+- Sin cambios de mods: siguen siendo 246, con los mismos 241 de CurseForge y 5 en `overrides/mods`.
+- No hace falta mundo nuevo ni se reinicia el progreso de misiones o del libro.
+- Si vienes de 1.9.2 y solo te interesa el crash, pon `"ingredientDedupe": false` en `config/alltheleaks.json` y reinicia. Para la cama hay que actualizar: el arreglo toca seis valores de `config/somnia-common.toml`.
+- No se añade ningún datapack: el salto de noche vuelve a ser el de Minecraft.
+
 ## [1.9.2] - 2026-11-02
 
 ### Added
