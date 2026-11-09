@@ -2,9 +2,10 @@
 
 All notable changes to Panas RPG will be documented here.
 
-## [1.9.3] - 2026-11-06
+## [1.9.4] - 2026-11-08
 
 ### Fixed
+- **El árbol de habilidades vuelve a abrirse.** Pulsar `K` mostraba la pantalla vacía ("Parece que no hay nada por acá…"). La causa no era el mod: los cuatro `experience.json` de 1.9.2 usaban el esquema antiguo (`conditions`/`parameters`) mientras el datapack se declara en formato nuevo (`version: 3`), y Puffish Skills 0.19.2 rechaza el pack entero. Al fallar un pack, el mod descarta **todas** las categorías, así que también desaparecían Combat, Mining, Class Skills y Weapon Skills. Los cuatro archivos están migrados a `variables` + `operations` (`puffish_skills:test` para item, bloque y NBT) y `experience` como expresión o lista de casos. Además se quitaron dos ids muertos del tag `panas:cocina` (`croptopia:dumpling`, `farmersdelight:pumpkin_pie`): de 565 a 563 platos y sin errores en el log.
 - **La cama vuelve a funcionar y la noche pasa como en Minecraft.** Somnia exigía 20 de fatiga para dormir y mostraba "You're not tired yet". Ahora `minimumFatigueToSleep = 0`: la cama funciona en cuanto anochece. Además `fading = false` deja de retener el contador de sueño, así que Minecraft completa el descanso con su fundido y su skip normales (~5 s) en vez de la simulación de ~3 minutos. También se puede dormir con la armadura puesta (`sleepWithArmor = true`).
 - **Crash al abrir "Mochilas, cofres y tuberías".** `AllTheLeaks` con `ingredientDedupe` activo bloqueaba el `ItemStack` de la mochila de Sophisticated Backpacks y lanzaba `ATLUnsupportedOperation` al renderizarla. Ahora `ingredientDedupe = false`; `resourceLocationDedupe` sigue activo.
 
@@ -15,9 +16,11 @@ All notable changes to Panas RPG will be documented here.
 
 ### Notes
 - Sin cambios de mods: siguen siendo 246, con los mismos 241 de CurseForge y 5 en `overrides/mods`.
-- No hace falta mundo nuevo ni se reinicia el progreso de misiones o del libro.
+- 1.9.4 añade únicamente los cuatro `experience.json` corregidos del datapack `panas-professions` y el tag `panas:cocina` limpio. Nada de configuración cambia respecto a 1.9.3.
+- No hace falta mundo nuevo. El progreso de misiones, del libro y los puntos ya invertidos en los oficios se conservan.
 - Si vienes de 1.9.2 y solo te interesa el crash, pon `"ingredientDedupe": false` en `config/alltheleaks.json` y reinicia. Para la cama hay que actualizar: el arreglo toca seis valores de `config/somnia-common.toml`.
-- No se añade ningún datapack: el salto de noche vuelve a ser el de Minecraft.
+- **Si vienes de 1.9.3**, el árbol no se arregla editando configs: los cuatro `experience.json` del datapack son los que cambian. Actualiza el pack o copia esa carpeta.
+- No se añade ningún datapack nuevo: el salto de noche vuelve a ser el de Minecraft.
 
 ## [1.9.2] - 2026-11-02
 

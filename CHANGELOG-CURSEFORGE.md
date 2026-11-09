@@ -5,17 +5,57 @@ No confundir con `CHANGELOG.md` (version breve para GitHub).
 
 ---
 
-Panas RPG v1.9.3 — La cama vuelve a ser la cama
+Panas RPG v1.9.4 — La cama y el árbol de habilidades
 
-**Fecha de publicación:** 6 de noviembre de 2026
+**Fecha de publicación:** 8 de noviembre de 2026
 **Estado:** Release
-**Mods:** sin cambios respecto a 1.9.2
+**Mods:** sin cambios respecto a 1.9.2 y 1.9.3
+
+## 🌳 El árbol de habilidades vuelve a abrirse
+
+Desde 1.9.2, pulsar **K** abría el árbol con el mensaje **"Parece que no hay nada por acá…"** y ninguna categoría. No era el mod ni el progreso del jugador: el datapack de las cuatro profesiones no llegaba a cargarse.
+
+### Qué pasaba
+
+Los cuatro `experience.json` de **Ingeniería**, **Cocina**, **Caza** y **Exploración** estaban escritos con el esquema antiguo de Puffish Skills (`conditions` y `parameters`) mientras el datapack se declaraba en formato nuevo (`version: 3`). Puffish Skills 0.19.2 rechazaba el pack al arrancar:
+
+```
+Data pack `panas` could not be loaded:
+Expected a valid operation type at `type` ...
+Unknown variable `pieza` ...
+```
+
+El detalle que lo hacía tan confuso: **cuando un datapack falla, el mod descarta la lista completa de categorías**. Por eso no faltaban solo las cuatro profesiones: también desaparecían Combat, Mining, Class Skills y Weapon Skills. La pantalla quedaba vacía aunque esos árboles estuvieran intactos.
+
+### Cómo se arregló
+
+Los cuatro archivos se reescribieron al esquema actual, sin tocar el jar del mod:
+
+- `variables` + `operations` en lugar de `conditions`/`parameters`.
+- Operaciones reales de 0.19.2: `get_crafted_item_stack`, `get_smelted_item_stack`, `get_mined_block_state`, `get_broken_block_state`, `get_eaten_item_stack`, `get_tool_item_stack`, `get_killed_living_entity`, `get_max_health` y `get_dropped_experience`.
+- El filtro de ítem, bloque y NBT se hace con **`puffish_skills:test`** (con namespace), el mismo que usa el datapack de ejemplo del mod.
+- `experience` pasa a expresión o lista de casos, igual que en `default_skill_trees`.
+
+| Oficio | Cómo sube ahora | Techo |
+| --- | --- | --- |
+| ⚙️ **Ingeniería** | Fabricar y fundir piezas de Create; minar menas sin Toque de Seda | Nivel 30 |
+| 🍳 **Cocina** | Comer, cocinar y fundir platos de los tags de cocina | Nivel 30 |
+| 🏹 **Caza** | Matar mobs; la XP escala con vida y XP del objetivo | Nivel 30 |
+| 🧭 **Exploración** | Pescar, romper bloques naturales, minar menas y fabricar equipo | Nivel 30 |
+
+Además se quitaron dos ids que ya no existen en el pack, `croptopia:dumpling` y `farmersdelight:pumpkin_pie`, del tag `panas:cocina`: de **565 a 563** entradas y sin errores en el log.
+
+### Qué se conserva
+
+- **Los mismos cuatro oficios**, con nivel 30, 1 punto por nivel, 6 nodos y curvas de XP idénticas.
+- **Sin respec.** El progreso y los puntos ya invertidos se quedan donde están.
+- **Los árboles originales** (Combat, Mining, Class Skills, Weapon Skills) siguen ahí, ahora sí visibles en la misma pantalla.
 
 ## 🛏️ La cama vuelve a ser la cama
 
 En 1.9.2, Somnia pedía **20 de fatiga** para dejarte dormir. Si llevabas menos de ocho minutos despierto, la cama te respondía **"You're not tired yet"** y no había forma de pasar la noche. Después, aunque ya podías dormir, Somnia retenía el contador de sueño y simulaba el mundo tick a tick: había que esperar **casi 3 minutos** hasta que amanecía. Para un jugador de Minecraft eso no es una mecánica: es un bloqueo y una pérdida de tiempo.
 
-En 1.9.3:
+En 1.9.4:
 
 - **Puedes dormir en cuanto anochece**, con o sin fatiga.
 - **La noche pasa como en Minecraft.** `fading = false` deja de retener el contador de sueño, así que Minecraft completa el descanso con su fundido a negro, su amanecer y su despertar de siempre, en unos **5 segundos**. La espera de ~3 minutos desaparece.
@@ -51,7 +91,7 @@ modifications of ItemStacks in Ingredients are not allowed!
 
 No era falta de RAM ni el libro: el heap iba por 2.049 MB de 8.064 MB. Era `AllTheLeaks` con `ingredientDedupe` activo. Sophisticated Backpacks escribe NBT en la mochila para cachear sus ranuras, y esa mochila estaba dentro de un `Ingredient` bloqueado por AllTheLeaks. El propio autor del mod desaconseja esa opción en 1.20.1.
 
-En 1.9.3:
+En 1.9.4:
 
 - `"ingredientDedupe": false` en `config/alltheleaks.json`.
 - `"resourceLocationDedupe": true` se mantiene: esa sí es segura y sigue ahorrando memoria.
@@ -64,6 +104,8 @@ En 1.9.3:
 
 ## 🔧 Cambios técnicos
 
+- `config/paxi/datapacks/panas-professions/data/panas/puffish_skills/categories/*/experience.json`: los cuatro archivos migrados de `conditions`/`parameters` a `variables` + `operations` con `puffish_skills:test`, y `experience` como expresión.
+- `config/paxi/datapacks/panas-professions/data/panas/tags/items/cocina.json`: fuera `croptopia:dumpling` y `farmersdelight:pumpkin_pie` (565 → 563).
 - `config/alltheleaks.json`: `ingredientDedupe` de `true` a `false`.
 - `config/somnia-common.toml`: `minimumFatigueToSleep` de `20` a `0`; `sleepWithArmor` de `false` a `true`; `fading` de `true` a `false` (Somnia deja de retener el contador de sueño); `fatigueReplenishRate` de `0.00833` a `0.0` (dormir no cura la fatiga); `wakeTimeSelectItem` de `minecraft:clock` a `""` (reloj de despertar desactivado); `enterSleepStart`/`enterSleepEnd` de `0`/`24000` a `12542`/`23460` (solo de noche); `validSleepStart`/`validSleepEnd` a `24000`/`24000` (ventana de simulación vacía).
 - La ventana `validSleep` vacía desactiva la aceleración de Somnia (`isValidSleepTime` es lo único que la habilita): el reloj no se adelanta mientras duermes y el skip lo hace Minecraft con su transición normal.
@@ -76,12 +118,17 @@ En 1.9.3:
 
 - Actualiza normalmente desde CurseForge o Prism Launcher.
 - No hace falta mundo nuevo: los cambios son de configuración y del libro, así que el progreso de misiones y la lectura se conservan.
-- **Instalación manual:** en el release de GitHub está `Panas.RPG-1.9.3-Mods.Completo.rar` con todos los mods, configs, quests y guía; descomprime su contenido en `.minecraft`.
+- **Instalación manual:** en el release de GitHub está `Panas.RPG-1.9.4-Mods.Completo.rar` con todos los mods, configs, quests y guía; descomprime su contenido en `.minecraft`.
 - Si arrastras una config vieja de 1.9.2, comprueba los seis valores de `config/somnia-common.toml` y `ingredientDedupe` en `config/alltheleaks.json`; el pack nuevo ya los trae.
+- El fix del árbol viaja en `config/paxi/datapacks/panas-professions`. Si actualizas solo `config`, copia esa carpeta completa.
 
 ## ⚠️ Si vienes de 1.9.2
 
-Puedes arreglar el crash sin actualizar el pack: abre `config/alltheleaks.json`, pon `"ingredientDedupe": false` y reinicia el juego. Para la cama, actualiza a 1.9.3: en `config/somnia-common.toml` pon `minimumFatigueToSleep = 0`, `sleepWithArmor = true`, `fading = false`, `fatigueReplenishRate = 0.0`, `wakeTimeSelectItem = ""`, la ventana de entrada `12542–23460` y la de simulación `validSleepStart`/`validSleepEnd = 24000`. No hace falta ningún datapack.
+Puedes arreglar el crash sin actualizar el pack: abre `config/alltheleaks.json`, pon `"ingredientDedupe": false` y reinicia el juego. Para la cama, actualiza a 1.9.4: en `config/somnia-common.toml` pon `minimumFatigueToSleep = 0`, `sleepWithArmor = true`, `fading = false`, `fatigueReplenishRate = 0.0`, `wakeTimeSelectItem = ""`, la ventana de entrada `12542–23460` y la de simulación `validSleepStart`/`validSleepEnd = 24000`. El árbol de habilidades no se arregla con configs: necesitas los cuatro `experience.json` de 1.9.4.
+
+## ⚠️ Si vienes de 1.9.3
+
+Solo te falta el árbol de habilidades. No cambies configs ni mods: copia `config/paxi/datapacks/panas-professions` de este release (o actualiza el pack completo) y reinicia. Al entrar al mundo, el log debe decir `Data pack 'panas' loaded successfully` y `K` debe mostrar las cuatro profesiones junto a los árboles de siempre.
 
 ## ⚠️ Problemas conocidos
 
@@ -94,7 +141,7 @@ Puedes arreglar el crash sin actualizar el pack: abre `config/alltheleaks.json`,
 
 - El libro **no se entrega automáticamente**: sigue saliendo de la misión de inicio.
 - Sin cambios de mods: **246 en total**, los mismos 241 de CurseForge y 5 en `overrides/mods` (Clumps, Controlling, Easy Mob Farm, Fabric API, Searchables).
-- La versión que muestra la guía sale de `macros.version` en `book.json`, que en esta release es `1.9.3`.
+- La versión que muestra la guía sale de `macros.version` en `book.json`, que en esta release es `1.9.4`.
 
 ---
 

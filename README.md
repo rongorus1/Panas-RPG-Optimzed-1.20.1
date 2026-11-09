@@ -5,7 +5,7 @@
 Panas RPG is a living, technical world in **Minecraft 1.20.1 + Forge 47.4.10** with **246 mods**. Master Create factories, survive epic dungeons and cook feasts with Farmer's Delight. Optimized for lag-free co-op!
 
 [![CurseForge](https://img.shields.io/badge/CurseForge-Download-orange?style=for-the-badge&logo=curseforge)](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1)
-[![Version](https://img.shields.io/badge/Version-1.9.2-blue?style=for-the-badge)](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases)
+[![Version](https://img.shields.io/badge/Version-1.9.4-blue?style=for-the-badge)](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green?style=for-the-badge&logo=minecraft)](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1)
 [![Forge](https://img.shields.io/badge/Forge-47.4.10-red?style=for-the-badge)](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html)
 [![Web](https://img.shields.io/badge/Web-Panas_RPG-9cf?style=for-the-badge&logo=github)](https://rongorus1.github.io/Web-Panas-RPG/#inicio)
@@ -44,7 +44,7 @@ La cocina se amplía con cuatro mods verificados contra Create 6.0.8 y Farmer's 
 ## Instalación
 
 ### PrismLauncher (Recomendado)
-1. Descarga `Panas.RPG.1.9.2.zip` desde [Releases](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases) o el pack completo desde [CurseForge](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1). En el mismo release está `Panas.RPG-1.9.2-Mods.Completo.rar` con todos los mods y configs para instalación manual.
+1. Descarga `Panas.RPG.1.9.4.zip` desde [Releases](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases) o el pack completo desde [CurseForge](https://www.curseforge.com/minecraft/modpacks/panasrs-v-1). En el mismo release está `Panas.RPG-1.9.4-Mods.Completo.rar` con todos los mods y configs para instalación manual.
 2. En PrismLauncher -> `Add Instance` -> `Import` -> selecciona el `.mrpack`/`.zip`.
 3. Asigna RAM en `Ajustes -> Memoria: 4096 MB (8 GB de sistema) o 6144–8192 MB (16 GB o más)` y dale `Launch`.
 
@@ -71,7 +71,8 @@ En 1.9.2 se añadió ajuste fino orientado a CPU y RAM: **JVM de referencia** co
 - **`easy_mob_farm` 11.0.0** viene en la instancia; el ZIP 1.9.1 traía 10.10.0. La versión nueva es la soportada.
 - **Fatiga de Somnia en beta.** La cama ya no se bloquea por fatiga ni por llevar armadura: puedes dormir cuando quieras y el tiempo corre hasta el amanecer. La fatiga solo añade efectos si acumulas 70 o más. Si te resulta incómoda, desactiva `enableFatigue` en `config/somnia-common.toml` (explicado en la guía del juego).
 - **Mobs que desaparecen.** Let Me Despawn libera a los mobs sin nombre que recogen equipo y a los que salen de un spawner. Si quieres conservar uno, ponle una etiqueta con nombre: los mobs con nombre están protegidos. El botón **Dungeon Configs** del título (o `Ctrl + K`) abre sus ajustes.
-- **Crash al abrir "Mochilas, cofres y tuberías" en 1.9.2.** `AllTheLeaks` con `ingredientDedupe` activo choca con Sophisticated Backpacks al dibujar la mochila. En 1.9.3 viene desactivado; si juegas 1.9.2, pon `"ingredientDedupe": false` en `config/alltheleaks.json` y reinicia el juego.
+- **Crash al abrir "Mochilas, cofres y tuberías" en 1.9.2.** `AllTheLeaks` con `ingredientDedupe` activo choca con Sophisticated Backpacks al dibujar la mochila. Desde 1.9.3 viene desactivado; si juegas 1.9.2, pon `"ingredientDedupe": false` en `config/alltheleaks.json` y reinicia el juego.
+- **Árbol de habilidades vacío en 1.9.2 y 1.9.3.** Pulsar `K` mostraba "Parece que no hay nada por acá…" porque el datapack `panas-professions` no cargaba con Puffish Skills 0.19.2. Corregido en **1.9.4**; requiere actualizar el pack (no se arregla con configs).
 
 ## Para jugadores sin Premium
 
