@@ -1,3 +1,21 @@
+## [2.0.0] - 2026-11-09
+
+### Added
+- Guía de ajustes opcionales para equipos modestos: renderizado, simulación, entidades, mipmaps y shaders. No se presentan como una mejora de tiempo de generación hasta medirlos en el equipo afectado.
+- Guía de perfiles de hojas: `panas-hojas` se recomienda para rendimiento en Gráficos Rápidos; en Gráficos Detallados se puede desactivar y Nautilus3D se ve correctamente, sin el bug visual observado en Rápido.
+
+### Changed
+- Texturas de los seis botones principales de FancyMenu actualizadas a 4× de resolución raster, con variantes normal, hover y desactivada. Se conservan dimensiones visibles, posiciones, IDs y funciones; la comprobación dentro del juego tras recargar queda pendiente.
+
+### Fixed
+- Evitado el conflicto entre el menú de herramientas de Create y la lista de habilidades de Relics: Create conserva Alt y Relics queda sin tecla predeterminada.
+- Guía actualizada a las 14 fases, incluida Fase XIV: Jinetes de Dragón.
+
+### Notes
+- No se modificaron IDs, archivos ni recompensas de FTB Quests; el progreso de los mundos se conserva.
+- No se cambiaron mods, configuraciones globales de memoria ni generación de estructuras. La optimización para equipos modestos es una recomendación opcional pendiente de medición A/B en la laptop de referencia.
+- Antes de publicar el ZIP de CurseForge, incluye panas-hojas.zip en overrides/resourcepacks y verifica la selección/orden del pack en una instancia limpia.
+
 # Changelog
 
 All notable changes to Panas RPG will be documented here.

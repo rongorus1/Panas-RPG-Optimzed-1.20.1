@@ -5,6 +5,51 @@ No confundir con `CHANGELOG.md` (version breve para GitHub).
 
 ---
 
+Panas RPG v2.0.0 — Guía optimizada y perfiles de hojas
+
+**Fecha:** 9 de noviembre de 2026
+**Estado:** Borrador local; pendiente de generar y comprobar el export de CurseForge.
+**Mods:** sin cambios.
+
+## 🌿 Perfiles de hojas según tus gráficos
+
+`panas-hojas` es un recurso opcional, no un requisito del modpack:
+
+- **Gráficos Rápidos:** se recomienda activarlo como opción de rendimiento. Quita la geometría 3D de Nautilus que en este modo se veía como placas sobresalientes. Al reducir geometría de hojas, puede aligerar el renderizado; la ganancia de FPS depende del equipo y no se presenta como una cifra garantizada.
+- **Gráficos Detallados:** puedes desactivarlo. En nuestras pruebas, las hojas 3D de Nautilus se ven correctamente y no presentan el bug visual observado en Rápido.
+
+Cambia los packs desde el menú de Resource Packs y pulsa `F3 + T` para recargar. Si activas `panas-hojas`, dale prioridad sobre Nautilus3D. Esta misma guía ya está en la wiki, en la página **Resource-Packs**.
+
+El ZIP 1.9.4 no incluía `panas-hojas`; para ofrecerlo en la actualización, añádelo a `overrides/resourcepacks` al exportar la 2.0 y verifica el paquete en una instalación limpia. El fix no redistribuye texturas de terceros.
+
+## 🧭 Ajustes opcionales para equipos modestos
+
+La guía propone probar renderizado 6, simulación 4, distancia de entidades 0.5, mipmaps 2, nubes rápidas, partículas reducidas y shaders apagados. Son ajustes de prueba: reducen carga gráfica y posiblemente el área de chunks solicitada, pero no se afirma que aceleren la generación del mundo. La prueba de la laptop mostró más de 5 GB de heap usado; no se recomienda reducir la memoria máxima a ciegas. No se cambian mods, estructuras ni flags JVM. Hace falta medir el mismo mundo antes y después en la laptop de referencia.
+
+## ⌨️ Conflicto de tecla corregido
+
+Create conserva Alt para su menú de herramientas. La lista de habilidades de Relics queda sin tecla predeterminada; cada jugador puede asignarla a una tecla libre desde Controles.
+
+## 🎨 Botones principales con texturas de alta resolución
+
+Se actualizaron a 4× resolución raster los fondos normal, hover e inactivo de los seis botones principales de FancyMenu. El tamaño visual, las posiciones, los identificadores y las funciones se mantienen igual.
+
+El export debe incluir las texturas de `config/fancymenu/assets/panas_buttons 2`. La verificación visual dentro del juego después de recargar el layout sigue pendiente.
+
+## 📖 Guía y progresión
+
+La guía ahora refleja las 14 fases y menciona Fase XIV: **Jinetes de Dragón**.
+
+## 🛡️ Progreso conservado
+
+No se modificaron IDs, misiones, recompensas ni archivos de progreso de FTB Quests. No hace falta crear un mundo nuevo para estos cambios de guía y controles.
+
+## 📦 Antes de actualizar
+
+Al exportar desde Prism Launcher en formato CurseForge, comprueba que panas-hojas.zip esté dentro de overrides/resourcepacks, instala el ZIP en una instancia limpia y confirma que la guía, el orden de packs y las teclas se cargan como se describe. La velocidad de creación de mundo sigue pendiente de prueba A/B en el equipo de 8 GB.
+
+---
+
 Panas RPG v1.9.4 — La cama y el árbol de habilidades
 
 **Fecha de publicación:** 8 de noviembre de 2026
