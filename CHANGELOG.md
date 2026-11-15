@@ -16,7 +16,7 @@ All notable changes to Panas RPG will be documented here.
 
 ### Packaging
 - El ZIP 2.1 pasó la auditoría estructural con 0 fallos y 0 avisos tras retirar 52 archivos de respaldo/vista previa de FancyMenu. SHA-256: `6ebf5fb0ed6f0d94c9d25378b04d67a029b259401fedddd5da4c8c12dc221421`.
-- El RAR de GitHub incluye una guía de instalación y excluye archivos de terceros que requieren descarga oficial. Consultar `INSTALACION-MANUAL-2.1.md`.
+- El RAR de GitHub excluye archivos de terceros que requieren descarga oficial. La descripción de la release incluye los pasos de instalación manual.
 - La carga en juego de las cuatro misiones, la instalación limpia y la prueba cooperativa siguen pendientes; los ajustes de rendimiento no se presentan como mejora medida.
 
 ## [2.0.0] - 2026-11-13
