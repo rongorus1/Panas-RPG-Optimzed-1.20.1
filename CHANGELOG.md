@@ -1,24 +1,32 @@
-## [2.0.0] - 2026-11-09
-
-### Added
-- Guía de ajustes opcionales para equipos modestos: renderizado, simulación, entidades, mipmaps y shaders. No se presentan como una mejora de tiempo de generación hasta medirlos en el equipo afectado.
-- Guía de perfiles de hojas: `panas-hojas` se recomienda para rendimiento en Gráficos Rápidos; en Gráficos Detallados se puede desactivar y Nautilus3D se ve correctamente, sin el bug visual observado en Rápido.
-
-### Changed
-- Texturas de los seis botones principales de FancyMenu actualizadas a 4× de resolución raster, con variantes normal, hover y desactivada. Se conservan dimensiones visibles, posiciones, IDs y funciones; la comprobación dentro del juego tras recargar queda pendiente.
-
-### Fixed
-- Evitado el conflicto entre el menú de herramientas de Create y la lista de habilidades de Relics: Create conserva Alt y Relics queda sin tecla predeterminada.
-- Guía actualizada a las 14 fases, incluida Fase XIV: Jinetes de Dragón.
-
-### Notes
-- No se modificaron IDs, archivos ni recompensas de FTB Quests; el progreso de los mundos se conserva.
-- No se cambiaron mods, configuraciones globales de memoria ni generación de estructuras. La optimización para equipos modestos es una recomendación opcional pendiente de medición A/B en la laptop de referencia.
-- Antes de publicar el ZIP de CurseForge, incluye panas-hojas.zip en overrides/resourcepacks y verifica la selección/orden del pack en una instancia limpia.
-
 # Changelog
 
 All notable changes to Panas RPG will be documented here.
+
+## [2.1.0] - 2026-11-15
+
+### Added
+- 43 JAR nuevos frente al RAR 2.0.0: estructuras y arqueología, nuevas criaturas, brújulas, aeronaves, cocina interactiva, utilidades cooperativas y compatibilidad EMF. El ZIP de CurseForge resuelve 289 JAR entre manifest y overrides; el RAR público de GitHub incluye 287 y remite JourneyMap y 3D Skin Layers a sus fuentes oficiales.
+- Cuatro misiones en las fases X, XI y XIII: ensamblaje de Create, cocina con Hands-On Delight, Fish and Chips de Aquaculture Delight y reconocimiento con Immersive Aircraft. Permanecen 14 capítulos; el análisis estático cuenta 187 misiones y 701 IDs sin duplicados ni dependencias rotas.
+- Correcciones puntuales de datos con `panas-fix-recetas` y receta Paxi para recuperar la Guía de Supervivencia.
+
+### Changed
+- Structurify ajusta la colocación de estructuras en terreno nuevo; la densidad final y el coste de generación aún no están medidos.
+- El ZIP exporta los controles actuales: H recoge objetos con Better Looting; F intercambia la mano; JourneyMap «seguir jugador» queda sin atajo. Se conservan los ajustes gráficos seleccionados en la instancia.
+- Aquamirae deja el panorama del menú a FancyMenu y el fondo de carga usa PNG válido.
+
+### Packaging
+- El ZIP 2.1 pasó la auditoría estructural con 0 fallos y 0 avisos tras retirar 52 archivos de respaldo/vista previa de FancyMenu. SHA-256: `6ebf5fb0ed6f0d94c9d25378b04d67a029b259401fedddd5da4c8c12dc221421`.
+- El RAR de GitHub incluye una guía de instalación y excluye archivos de terceros que requieren descarga oficial. Consultar `INSTALACION-MANUAL-2.1.md` y `VALIDATION-2.1.md`.
+- La carga en juego de las cuatro misiones, la instalación limpia y la prueba cooperativa siguen pendientes; los ajustes de rendimiento no se presentan como mejora medida.
+
+## [2.0.0] - 2026-11-13
+
+### Added
+- Ruta de primeros 30 minutos en la Guía de Supervivencia, enlazada desde las misiones iniciales; guía de las 14 fases y perfiles opcionales para equipos modestos.
+- Nuevas texturas de alta resolución para seis botones de FancyMenu y documentación del recurso opcional `panas-hojas`.
+
+### Notes
+- Publicación anterior: 246 JAR en el paquete manual de GitHub. El contenido 2.1 se compara con ese artefacto.
 
 ## [1.9.4] - 2026-11-08
 

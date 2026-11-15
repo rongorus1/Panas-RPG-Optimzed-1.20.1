@@ -1,52 +1,56 @@
 # Panas RPG — Changelog para CurseForge
 
-Version larga (anuncio de release) que se pega a mano en la pagina del proyecto en CurseForge.
-No confundir con `CHANGELOG.md` (version breve para GitHub).
+Versión extensa para la página del proyecto. El archivo corto para GitHub está en `CHANGELOG.md`.
 
 ---
 
-Panas RPG v2.0.0 — Guía optimizada y perfiles de hojas
+# Panas RPG 2.1 — Expediciones, cocina y cooperación
 
-**Fecha:** 9 de noviembre de 2026
-**Estado:** Borrador local; pendiente de generar y comprobar el export de CurseForge.
-**Mods:** sin cambios.
+**Minecraft:** 1.20.1 · **Forge:** 47.4.10 · **Java:** 17
 
-## 🌿 Perfiles de hojas según tus gráficos
+**Archivo CurseForge:** `Panas RPG 2.1.zip` · **Estado:** preparado localmente; publicación en CurseForge pendiente.
+**Mods:** 289 archivos JAR en la instancia y en la instalación completa desde el manifest (282 proyectos de mods + 7 JAR en overrides). Son 43 más que en el paquete manual 2.0.0.
 
-`panas-hojas` es un recurso opcional, no un requisito del modpack:
+## 🧭 Más lugares por descubrir
 
-- **Gráficos Rápidos:** se recomienda activarlo como opción de rendimiento. Quita la geometría 3D de Nautilus que en este modo se veía como placas sobresalientes. Al reducir geometría de hojas, puede aligerar el renderizado; la ganancia de FPS depende del equipo y no se presenta como una cifra garantizada.
-- **Gráficos Detallados:** puedes desactivarlo. En nuestras pruebas, las hojas 3D de Nautilus se ven correctamente y no presentan el bug visual observado en Rápido.
+YUNG's Cave Biomes, Bridges, Better End Island y Extras; Moog's End Structures, Structory, Project Vibrant Journeys y Better Archeology amplían la exploración. Deeper and Darker, Enderman Overhaul, Aquamirae, Guard Villagers y Goblin Traders incorporan encuentros. Nature's Compass y Explorer's Compass ayudan a encontrar rutas; Immersive Aircraft ofrece otra forma de viajar.
 
-Cambia los packs desde el menú de Resource Packs y pulsa `F3 + T` para recargar. Si activas `panas-hojas`, dale prioridad sobre Nautilus3D. Esta misma guía ya está en la wiki, en la página **Resource-Packs**.
+Structurify incluye ajustes de separación y frecuencia para estructuras en chunks nuevos. Su efecto real en densidad y tiempo de creación de mundo todavía no se ha medido.
 
-El ZIP 1.9.4 no incluía `panas-hojas`; para ofrecerlo en la actualización, añádelo a `overrides/resourcepacks` al exportar la 2.0 y verifica el paquete en una instalación limpia. El fix no redistribuye texturas de terceros.
+## 🍳 Cocina e interacción con los panas
 
-## 🧭 Ajustes opcionales para equipos modestos
+Hands-On Delight y Diegesis añaden interacción directa con la cocina de Farmer's Delight. Immersive Melodies, WATUT, Chat Heads y Chat Animation hacen más visibles las actividades del grupo. Easy Anvils, Easy Magic, Double Doors y Visual Workbench simplifican tareas habituales. Cinco módulos EMF adicionales cubren Core, Create, Carry On, Better Combat y Supplementaries; se suman a los dos que ya tenía la instancia.
 
-La guía propone probar renderizado 6, simulación 4, distancia de entidades 0.5, mipmaps 2, nubes rápidas, partículas reducidas y shaders apagados. Son ajustes de prueba: reducen carga gráfica y posiblemente el área de chunks solicitada, pero no se afirma que aceleren la generación del mundo. La prueba de la laptop mostró más de 5 GB de heap usado; no se recomienda reducir la memoria máxima a ciegas. No se cambian mods, estructuras ni flags JVM. Hace falta medir el mismo mundo antes y después en la laptop de referencia.
+También se incorporaron Fast Furnace, Fast Leaf Decay y Fast Paintings. Su presencia no equivale a una mejora de FPS o de generación demostrada.
 
-## ⌨️ Conflicto de tecla corregido
+## 📜 Cuatro misiones nuevas
 
-Create conserva Alt para su menú de herramientas. La lista de habilidades de Relics queda sin tecla predeterminada; cada jugador puede asignarla a una tecla libre desde Controles.
+- **Fase X — Taller de precisión:** preparar un Precision Mechanism y un Mechanical Crafter de Create.
+- **Fase XI — Cocina a la vista:** elaborar dos Beef Stew y confirmar manualmente la interacción con Hands-On Delight.
+- **Fase XI — Pescado de la costa al plato:** entregar cuatro Fish and Chips de Aquaculture Delight.
+- **Fase XIII — Aeronave para explorar:** preparar un Airship y confirmar manualmente un vuelo de reconocimiento.
 
-## 🎨 Botones principales con texturas de alta resolución
+Se mantienen los **14 capítulos**. La revisión de archivos cuenta **187 misiones y 701 IDs**, sin duplicados ni dependencias rotas. El último log del juego se generó antes de estas cuatro misiones; su carga y sus recompensas en cooperativo aún deben probarse.
 
-Se actualizaron a 4× resolución raster los fondos normal, hover e inactivo de los seis botones principales de FancyMenu. El tamaño visual, las posiciones, los identificadores y las funciones se mantienen igual.
+## ⚙️ Configuraciones y correcciones
 
-El export debe incluir las texturas de `config/fancymenu/assets/panas_buttons 2`. La verificación visual dentro del juego después de recargar el layout sigue pendiente.
+- Dos datapacks Paxi incorporan correcciones puntuales de recetas/datos y una forma de recuperar el libro de supervivencia. Algunos errores de datos del log siguen bajo revisión.
+- Better Looting usa **H** para recoger; **F** sigue intercambiando la mano; el atajo «seguir jugador» de JourneyMap está libre. El ZIP incluye estas teclas y los ajustes gráficos seleccionados en la instancia.
+- Aquamirae deja de sustituir el panorama de FancyMenu y la imagen de carga tiene formato PNG válido. Revisar el resultado visual tras instalar.
 
-## 📖 Guía y progresión
+## 📦 Instalación y archivos
 
-La guía ahora refleja las 14 fases y menciona Fase XIV: **Jinetes de Dragón**.
+Importa `Panas RPG 2.1.zip` en CurseForge o Prism Launcher para que el manifest descargue los proyectos oficiales y aplique los archivos de `overrides`. El ZIP pasó la auditoría estructural con **0 fallos y 0 avisos**; se retiraron 52 respaldos y vistas previas de FancyMenu. Conserva los ajustes gráficos y el orden de resource packs del perfil exportado.
 
-## 🛡️ Progreso conservado
+El RAR manual de GitHub tiene una guía propia: algunos archivos de terceros se obtienen por separado desde sus fuentes oficiales por condiciones de redistribución. Antes de dar la versión por validada quedan la instalación limpia, la revisión de resource packs, las cuatro misiones en juego, las recetas y una sesión cooperativa. Los ajustes de RAM del equipo del autor no son recomendación universal para portátiles de 8 GB.
 
-No se modificaron IDs, misiones, recompensas ni archivos de progreso de FTB Quests. No hace falta crear un mundo nuevo para estos cambios de guía y controles.
+---
 
-## 📦 Antes de actualizar
+# Panas RPG 2.0 — Guía de inicio y menús renovados
 
-Al exportar desde Prism Launcher en formato CurseForge, comprueba que panas-hojas.zip esté dentro de overrides/resourcepacks, instala el ZIP en una instancia limpia y confirma que la guía, el orden de packs y las teclas se cargan como se describe. La velocidad de creación de mundo sigue pendiente de prueba A/B en el equipo de 8 GB.
+**Publicado en CurseForge:** 11 de noviembre de 2026. **JAR del paquete manual de GitHub:** 246.
+
+La versión anterior introdujo la ruta de los primeros 30 minutos en la Guía de Supervivencia, la guía de 14 fases, los perfiles opcionales de hojas y los botones renovados de FancyMenu. Esta sección resume el release publicado; el borrador extenso anterior se conserva en el respaldo local del changelog.
 
 ---
 
