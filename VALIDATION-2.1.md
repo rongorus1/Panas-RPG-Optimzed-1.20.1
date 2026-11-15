@@ -1,12 +1,13 @@
 # Validación preliminar de Panas RPG 2.1
 
-**Fecha:** 15/11/2026. **Estado:** artefactos locales; sin publicación ni instalación limpia comprobada.
+**Fecha:** 15/11/2026. **Estado:** GitHub v-2.1.0 publicado como versión preliminar; CurseForge 2.1 e instalación limpia pendientes.
 
 ## Artefactos
 
 - CurseForge ZIP limpio: `C:\Users\User\Downloads\Panas RPG 2.1.zip` — SHA256 `6ebf5fb0ed6f0d94c9d25378b04d67a029b259401fedddd5da4c8c12dc221421`.
 - RAR manual: `D:\mine\modpack\modpack all mod\Panas.RPG.2.1-Mods.Completo.rar` — SHA256 `B22141812381B7CECC725DDE877BE5A1D625A2CAEA55D0052FE623BA663F93EC` (984.715.756 bytes).
 - Variante para GitHub: `D:\mine\modpack\modpack all mod\Panas.RPG.2.1-GitHub-Manual.rar` — SHA256 `3C96A5E03F23674F000B9BA6D81B6D557299F76EE63B1B1F16DD1DAB74BB3760`. Contiene 287 JAR y `INSTALACION-MANUAL-2.1.md`; omite JourneyMap, 3D Skin Layers y los 14 resource packs físicos por restricciones o permisos de redistribución no comprobados. Prueba UnRAR: «Todo correcto».
+- Publicación verificada: [GitHub Release v-2.1.0](https://github.com/rongorus1/Panas-RPG-Optimzed-1.20.1/releases/tag/v-2.1.0), preliminar. La API de GitHub devuelve el asset como `uploaded`, 968.698.016 bytes, con digest SHA256 idéntico al archivo local. Commit de los changelogs e instrucciones: `c924d0c` en `main`.
 - Respaldo anterior a la limpieza de ambos archivos: `D:\mine\modpack\respaldos\release-2.1-clean-20261115\`.
 
 ## Comparación estructural
